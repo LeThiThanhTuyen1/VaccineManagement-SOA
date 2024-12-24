@@ -2,7 +2,7 @@
 USE vaccine_management;
 
 CREATE TABLE users (
-  id INT PRIMARY KEY,
+  id INT PRIMARY KEY IDENTITY(1,1),
   username VARCHAR(45) NOT NULL,
   password VARCHAR(225) NOT NULL,
   role VARCHAR(10) CHECK (role IN ('MANAGER', 'ADMIN')),
