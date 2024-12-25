@@ -77,6 +77,7 @@ public class UsersController : ControllerBase
 
     // POST: api/Users/register
     [HttpPost("register")]
+    [Authorize(Roles = "ADMIN")]
     public IActionResult Register([FromBody] User user)
     {
         if (_context.Users.Any(u => u.Username == user.Username))
@@ -94,6 +95,7 @@ public class UsersController : ControllerBase
 
     // PUT: api/Users/activate/5
     [HttpPut("activate/{id}")]
+    [Authorize(Roles = "ADMIN")]
     public IActionResult ActivateAccount(int id)
     {
         var user = _context.Users.Find(id);
@@ -154,10 +156,5 @@ public class UsersController : ControllerBase
             var hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
             return Convert.ToBase64String(hashedBytes);
         }
-    }
-
-    private bool UserExists(int id)
-    {
-        return _context.Users.Any(e => e.Id == id);
     }
 }

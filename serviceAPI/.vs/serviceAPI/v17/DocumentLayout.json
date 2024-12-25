@@ -1,53 +1,81 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\",
+  "WorkspaceRootPath": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\vaccinemanagement\\serviceapi\\authapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\controllers\\vaccinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\controllers\\vaccinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\vaccinemanagement\\serviceapi\\authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\data\\vaccinedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\data\\vaccinedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\vaccinemanagement\\serviceapi\\authapi\\middleware\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\middleware\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\models\\vaccine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\models\\vaccine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\vaccinemanagement\\serviceapi\\authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\models\\vaccinedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\models\\vaccinedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\vaccinemanagement\\serviceapi\\authapi\\authapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\authapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\vaccinemanagement\\serviceapi\\authapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\vaccinemanagement\\serviceapi\\authapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\vaccinemanagement\\serviceapi\\authapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\vaccinemanagement\\serviceapi\\vaccineapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\vaccinemanagement\\serviceapi\\vaccineapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\vaccinemanagement\\serviceapi\\authapi\\authapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\vaccineapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\vaccineapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\middleware\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\middleware\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\authapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\authapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\authapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\authapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\vaccinemanagement\\serviceapi\\authapi\\data\\vaccinedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\data\\vaccinedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\data\\vaccinedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -58,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -77,163 +105,239 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\Program.cs",
-              "RelativeDocumentMoniker": "AuthAPI\\Program.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\Program.cs",
-              "RelativeToolTip": "AuthAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T06:57:58.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "AuthAPI\\Controllers\\UsersController.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "AuthAPI\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAUwBoAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T07:01:57.191Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "JwtMiddleware.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\Middleware\\JwtMiddleware.cs",
-              "RelativeDocumentMoniker": "AuthAPI\\Middleware\\JwtMiddleware.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\Middleware\\JwtMiddleware.cs",
-              "RelativeToolTip": "AuthAPI\\Middleware\\JwtMiddleware.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Vaccine.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Models\\Vaccine.cs",
+              "RelativeDocumentMoniker": "VaccineAPI\\Models\\Vaccine.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Models\\Vaccine.cs",
+              "RelativeToolTip": "VaccineAPI\\Models\\Vaccine.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T07:05:55.963Z",
+              "WhenOpened": "2024-12-24T09:35:08.834Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "User.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\Models\\User.cs",
-              "RelativeDocumentMoniker": "AuthAPI\\Models\\User.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\Models\\User.cs",
-              "RelativeToolTip": "AuthAPI\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "VaccineAPI\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "VaccineAPI\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T06:51:50.707Z",
+              "WhenOpened": "2024-12-24T09:45:32.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Program.cs",
+              "RelativeDocumentMoniker": "VaccineAPI\\Program.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Program.cs",
+              "RelativeToolTip": "VaccineAPI\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T08:34:36.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VaccinesController.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Controllers\\VaccinesController.cs",
+              "RelativeDocumentMoniker": "VaccineAPI\\Controllers\\VaccinesController.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Controllers\\VaccinesController.cs",
+              "RelativeToolTip": "VaccineAPI\\Controllers\\VaccinesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:47:09.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VaccineDbContext.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Data\\VaccineDbContext.cs",
+              "RelativeDocumentMoniker": "VaccineAPI\\Data\\VaccineDbContext.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Data\\VaccineDbContext.cs",
+              "RelativeToolTip": "VaccineAPI\\Data\\VaccineDbContext.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvwsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:36:09.955Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "AuthAPI\\appsettings.json",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\appsettings.json",
-              "RelativeToolTip": "AuthAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-24T06:54:41.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthAPI.http",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\AuthAPI.http",
-              "RelativeDocumentMoniker": "AuthAPI\\AuthAPI.http",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\AuthAPI.http",
-              "RelativeToolTip": "AuthAPI\\AuthAPI.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-12-24T06:59:19.67Z",
-              "EditorCaption": ""
+              "Title": "VaccineDetail.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Models\\VaccineDetail.cs",
+              "RelativeDocumentMoniker": "VaccineAPI\\Models\\VaccineDetail.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Models\\VaccineDetail.cs",
+              "RelativeToolTip": "VaccineAPI\\Models\\VaccineDetail.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:35:37.487Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "AuthAPI\\WeatherForecast.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\WeatherForecast.cs",
-              "RelativeToolTip": "AuthAPI\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T08:44:03.444Z",
-              "EditorCaption": ""
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "VaccineAPI\\appsettings.json",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\appsettings.json",
+              "RelativeToolTip": "VaccineAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-24T08:36:44.77Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "AuthAPI\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "AuthAPI\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Models\\User.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Models\\User.cs",
+              "RelativeToolTip": "AuthAPI\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T08:38:36.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T06:51:50.707Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\VaccineAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "VaccineAPI\\appsettings.json",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\VaccineAPI\\appsettings.json",
-              "RelativeToolTip": "VaccineAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "AuthAPI\\appsettings.json",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\appsettings.json",
+              "RelativeToolTip": "AuthAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-24T08:36:44.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T06:54:41.182Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\VaccineAPI\\Program.cs",
-              "RelativeDocumentMoniker": "VaccineAPI\\Program.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\VaccineAPI\\Program.cs",
-              "RelativeToolTip": "VaccineAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Controllers\\UsersController.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "AuthAPI\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAmwJ4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T08:34:36.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AuthAPI",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\AuthAPI.csproj",
-              "RelativeDocumentMoniker": "AuthAPI\\AuthAPI.csproj",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\AuthAPI.csproj",
-              "RelativeToolTip": "AuthAPI\\AuthAPI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-24T08:25:16.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T07:01:57.191Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "VaccineAPI\\WeatherForecast.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\WeatherForecast.cs",
+              "RelativeToolTip": "VaccineAPI\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:47:33.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VaccineAPI.http",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\VaccineAPI.http",
+              "RelativeDocumentMoniker": "VaccineAPI\\VaccineAPI.http",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\VaccineAPI.http",
+              "RelativeToolTip": "VaccineAPI\\VaccineAPI.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-12-24T09:47:34.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthAPI.http",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\AuthAPI.http",
+              "RelativeDocumentMoniker": "AuthAPI\\AuthAPI.http",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\AuthAPI.http",
+              "RelativeToolTip": "AuthAPI\\AuthAPI.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-12-24T06:59:19.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "AuthAPI\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T08:38:36.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "JwtMiddleware.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Middleware\\JwtMiddleware.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Middleware\\JwtMiddleware.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Middleware\\JwtMiddleware.cs",
+              "RelativeToolTip": "AuthAPI\\Middleware\\JwtMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T07:05:55.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Program.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Program.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Program.cs",
+              "RelativeToolTip": "AuthAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T06:57:58.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\WeatherForecast.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\WeatherForecast.cs",
+              "RelativeToolTip": "AuthAPI\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T08:44:03.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AuthAPI.csproj",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\AuthAPI.csproj",
+              "RelativeDocumentMoniker": "AuthAPI\\AuthAPI.csproj",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\AuthAPI.csproj",
+              "RelativeToolTip": "AuthAPI\\AuthAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-24T08:25:16.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "VaccineDbContext.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\Data\\VaccineDbContext.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Data\\VaccineDbContext.cs",
               "RelativeDocumentMoniker": "AuthAPI\\Data\\VaccineDbContext.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\Data\\VaccineDbContext.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Data\\VaccineDbContext.cs",
               "RelativeToolTip": "AuthAPI\\Data\\VaccineDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T06:53:50.787Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         },

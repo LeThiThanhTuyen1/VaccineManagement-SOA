@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lfl+UeCD0Lw=",
+  "dgSpecHash": "VUnp90Rljmw=",
   "success": true,
-  "projectFilePath": "E:\\kthdv\\VaccineManagement-SOA\\vaccinemanagement\\serviceAPI\\AuthAPI\\AuthAPI.csproj",
+  "projectFilePath": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\AuthAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\FPT\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\FPT\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
