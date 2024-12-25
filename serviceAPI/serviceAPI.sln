@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthAPI", "AuthAPI\AuthAPI.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaccineAPI", "VaccineAPI\VaccineAPI.csproj", "{622BBD9C-221C-4EA0-A573-B05B2B677128}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaccinationAPI", "VaccinationAPI\VaccinationAPI.csproj", "{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitizenAPI", "CitizenAPI\CitizenAPI.csproj", "{FF8A2526-0E82-495F-91F8-FE8F30107EE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{622BBD9C-221C-4EA0-A573-B05B2B677128}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{622BBD9C-221C-4EA0-A573-B05B2B677128}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{622BBD9C-221C-4EA0-A573-B05B2B677128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF8A2526-0E82-495F-91F8-FE8F30107EE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF8A2526-0E82-495F-91F8-FE8F30107EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF8A2526-0E82-495F-91F8-FE8F30107EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF8A2526-0E82-495F-91F8-FE8F30107EE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

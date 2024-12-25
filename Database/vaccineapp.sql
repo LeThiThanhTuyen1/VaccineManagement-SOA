@@ -81,7 +81,7 @@ CREATE TABLE vaccination_history (
 
 -- Thêm tài khoản
 INSERT INTO users (username, password, role, enabled) 
-VALUES ('admin', '$2a$10$I21tJHZfr69zAScdkfr0UuMOVoq4ytSFTaBJcYkdygkv1TqhHQtR6', 'ADMIN', 1);
+VALUES ('admin', '240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9', 'ADMIN', 1);
 
 -- Thêm dữ liệu các tỉnh/thành phố
 INSERT INTO provinces (name) VALUES 

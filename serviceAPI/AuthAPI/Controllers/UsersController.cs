@@ -77,7 +77,7 @@ public class UsersController : ControllerBase
 
     // POST: api/Users/register
     [HttpPost("register")]
-    [Authorize(Roles = "ADMIN")]
+   // [Authorize(Roles = "ADMIN")]
     public IActionResult Register([FromBody] User user)
     {
         if (_context.Users.Any(u => u.Username == user.Username))
@@ -95,7 +95,7 @@ public class UsersController : ControllerBase
 
     // PUT: api/Users/activate/5
     [HttpPut("activate/{id}")]
-    [Authorize(Roles = "ADMIN")]
+    //[Authorize(Roles = "ADMIN")]
     public IActionResult ActivateAccount(int id)
     {
         var user = _context.Users.Find(id);

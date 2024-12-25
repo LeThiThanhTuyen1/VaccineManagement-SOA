@@ -21,6 +21,6 @@ namespace VaccineAPI.Models
         [Column("status")]
         public string? Status { get; set; }
 
-        public Vaccine? Vaccine { get; set; }
+        public virtual Vaccine? Vaccine { get; set; }
     }
 }

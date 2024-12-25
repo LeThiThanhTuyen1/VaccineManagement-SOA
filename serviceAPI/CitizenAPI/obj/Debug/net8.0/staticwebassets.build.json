@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "f0bH6m1e7yX/LQz5zpx+ODDj92Tc6qDDP5+GMJORTc8=",
+  "Source": "CitizenAPI",
+  "BasePath": "_content/CitizenAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

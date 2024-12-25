@@ -11,6 +11,11 @@
         "Path": "VaccineAPI\\VaccineAPI.csproj",
         "Action": "Start",
         "DebugTarget": "http"
+      },
+      {
+        "Path": "CitizenAPI\\CitizenAPI.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
       }
     ]
   }
