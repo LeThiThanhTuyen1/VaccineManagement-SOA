@@ -79,7 +79,7 @@ namespace VaccineAPI.Controllers
 
         // POST: api/Vaccines
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "ADMIN")]
         public async Task<ActionResult<Vaccine>> PostVaccine([FromBody] Vaccine vaccine)
         {
             _context.Vaccines.Add(vaccine);
@@ -89,7 +89,7 @@ namespace VaccineAPI.Controllers
 
         // PUT: api/Vaccines/{id}
         [HttpPut("{id}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> PutVaccine(long id, [FromBody] Vaccine vaccine)
         {
             if (id != vaccine.Id)
@@ -115,7 +115,7 @@ namespace VaccineAPI.Controllers
 
         // DELETE: api/Vaccines/{id}
         [HttpDelete("{id}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> DeleteVaccine(long id)
         {
             var vaccine = await _context.Vaccines.FindAsync(id);
@@ -136,7 +136,7 @@ namespace VaccineAPI.Controllers
 
         // POST: api/Vaccines/{id}/details
         [HttpPost("{id}/details")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "ADMIN")]
         public async Task<ActionResult<VaccineDetail>> PostVaccineDetail(long id, [FromBody] VaccineDetail detail)
         {
             var vaccine = await _context.Vaccines.FindAsync(id);
@@ -153,7 +153,7 @@ namespace VaccineAPI.Controllers
 
         // PUT: api/Vaccines/{id}/details/{detailId}
         [HttpPut("{id}/details/{detailId}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> PutVaccineDetail(long id, long detailId, [FromBody] VaccineDetail detail)
         {
             if (detailId != detail.DetailId)
@@ -177,7 +177,7 @@ namespace VaccineAPI.Controllers
 
         // DELETE: api/Vaccines/{id}/details/{detailId}
         [HttpDelete("{id}/details/{detailId}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> DeleteVaccineDetail(long id, long detailId)
         {
             var detail = await _context.VaccineDetails.FindAsync(detailId);

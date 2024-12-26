@@ -8,6 +8,7 @@ namespace VaccinationAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class VaccinationHistoriesController : ControllerBase
     {
         private readonly VaccineDbContext _context;
@@ -19,7 +20,6 @@ namespace VaccinationAPI.Controllers
 
         // GET: api/VaccinationHistories
         [HttpGet]
-        [Authorize]
         public async Task<ActionResult<IEnumerable<VaccinationHistory>>> GetVaccinationHistories()
         {
             return await _context.VaccinationHistories.ToListAsync();
@@ -27,7 +27,6 @@ namespace VaccinationAPI.Controllers
 
         // POST: api/VaccinationHistories
         [HttpPost]
-        [Authorize(Roles = "Admin")]
         public async Task<ActionResult<VaccinationHistory>> PostVaccinationHistory([FromBody] VaccinationHistory history)
         {
             history.VaccinationDate = DateTime.UtcNow;

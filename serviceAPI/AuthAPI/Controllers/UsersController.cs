@@ -59,7 +59,7 @@ public class UsersController : ControllerBase
             Subject = new ClaimsIdentity(new[]
              {
                 new Claim(ClaimTypes.Name, dbUser.Id.ToString()),
-                new Claim(ClaimTypes.Role, dbUser.Role) // Thêm role vào token
+                new Claim(ClaimTypes.Role, dbUser.Role) 
             }),
             Expires = DateTime.UtcNow.AddHours(1),
             SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),
@@ -77,7 +77,7 @@ public class UsersController : ControllerBase
 
     // POST: api/Users/register
     [HttpPost("register")]
-   // [Authorize(Roles = "ADMIN")]
+    [Authorize(Roles = "ADMIN")]
     public IActionResult Register([FromBody] User user)
     {
         if (_context.Users.Any(u => u.Username == user.Username))
@@ -95,7 +95,7 @@ public class UsersController : ControllerBase
 
     // PUT: api/Users/activate/5
     [HttpPut("activate/{id}")]
-    //[Authorize(Roles = "ADMIN")]
+    [Authorize(Roles = "ADMIN")]
     public IActionResult ActivateAccount(int id)
     {
         var user = _context.Users.Find(id);
@@ -117,7 +117,7 @@ public class UsersController : ControllerBase
 
     // PUT: api/Users/deactivate/5
     [HttpPut("deactivate/{id}")]
-    [Authorize(Roles = "Admin")] 
+    [Authorize(Roles = "ADMIN")] 
     public IActionResult DeactivateAccount(int id)
     {
         var user = _context.Users.Find(id);

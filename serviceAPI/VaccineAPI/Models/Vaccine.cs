@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace VaccineAPI.Models
 {
@@ -24,6 +25,8 @@ namespace VaccineAPI.Models
 
         [Column("description")]
         public string? Description { get; set; }
+
+        [JsonIgnore]
         public ICollection<VaccineDetail>? VaccineDetails { get; set; }
     }
 }

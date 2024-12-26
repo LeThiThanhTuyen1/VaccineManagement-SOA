@@ -379,13 +379,6 @@
           "description": {
             "type": "string",
             "nullable": true
-          },
-          "vaccineDetails": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/VaccineDetail"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -412,9 +405,6 @@
           "status": {
             "type": "string",
             "nullable": true
-          },
-          "vaccine": {
-            "$ref": "#/components/schemas/Vaccine"
           }
         },
         "additionalProperties": false
