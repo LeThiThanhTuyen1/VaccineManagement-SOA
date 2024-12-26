@@ -129,9 +129,9 @@ VALUES
 (N'Phạm Văn C', '2005-11-10', '0922334455', 3, N'Số 45/6/1 Đường Lê Lợi', 'CHILD');
 
 -- Thêm dữ liệu đăng ký tiêm
-INSERT INTO registrations (citizen_id, vaccine_id, registration_date, vaccination_date, location, status) VALUES
-(1, 1, '2024-12-01', '2024-12-10', N'Trung tâm y tế Ba Đình', 'PENDING'),
-(2, 2, '2024-12-05', '2024-12-12', N'Trung tâm y tế Hoàn Kiếm', 'PENDING');
+INSERT INTO registrations (citizen_id, vaccine_id, registration_date, location, status) VALUES
+(1, 1, '2024-12-01', N'Trung tâm y tế Ba Đình', 'PENDING'),
+(2, 2, '2024-12-05', N'Trung tâm y tế Hoàn Kiếm', 'PENDING');
 
 -- Thêm lịch sử tiêm
 INSERT INTO vaccination_history (citizen_id, vaccine_id, vaccination_date, status) VALUES
