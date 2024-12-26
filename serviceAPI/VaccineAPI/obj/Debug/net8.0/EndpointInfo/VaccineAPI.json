@@ -84,6 +84,27 @@
       }
     },
     "/api/Vaccines/{id}": {
+      "get": {
+        "tags": [
+          "Vaccines"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "put": {
         "tags": [
           "Vaccines"

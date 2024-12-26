@@ -29,17 +29,28 @@ builder.Services.AddAuthentication("Bearer")
         };
     });
 
-// Thêm dịch vụ Authorization (có thể thêm chính sách quyền nếu cần)
-builder.Services.AddAuthorization();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader());
+});
 
-// Thêm controller
+builder.Services.AddAuthorization();
 builder.Services.AddControllers();
 
-// Thêm Swagger để hỗ trợ API documentation
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.UseCors(builder =>
+    builder.WithOrigins("http://localhost:5102")
+           .AllowAnyMethod()
+           .AllowAnyHeader()
+);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

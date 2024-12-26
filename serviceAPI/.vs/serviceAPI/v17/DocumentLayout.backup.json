@@ -3,24 +3,120 @@
   "WorkspaceRootPath": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccinationapi\\controllers\\registrationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|solutionrelative:vaccinationapi\\controllers\\registrationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccinationapi\\controllers\\vaccinationhistoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|solutionrelative:vaccinationapi\\controllers\\vaccinationhistoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccinationapi\\dtos\\citizendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|solutionrelative:vaccinationapi\\dtos\\citizendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccinationapi\\dtos\\vaccinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|solutionrelative:vaccinationapi\\dtos\\vaccinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\citizenapi\\controllers\\citizenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|solutionrelative:citizenapi\\controllers\\citizenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\models\\vaccinedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\models\\vaccinedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\citizenapi\\models\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|solutionrelative:citizenapi\\models\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccinationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|solutionrelative:vaccinationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\models\\vaccine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\models\\vaccine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\authapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\authapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\controllers\\vaccinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\controllers\\vaccinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\citizenapi\\models\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|solutionrelative:citizenapi\\models\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccinationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|solutionrelative:vaccinationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\data\\vaccinedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\data\\vaccinedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccinationapi\\data\\vaccinedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|solutionrelative:vaccinationapi\\data\\vaccinedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccinationapi\\models\\vaccinationhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|solutionrelative:vaccinationapi\\models\\vaccinationhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccinationapi\\models\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|solutionrelative:vaccinationapi\\models\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\models\\vaccinedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\models\\vaccinedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\citizenapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|solutionrelative:citizenapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccinationapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|solutionrelative:vaccinationapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\citizenapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|solutionrelative:citizenapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\vaccineapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\vaccineapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\citizenapi\\citizenapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|solutionrelative:citizenapi\\citizenapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccinationapi\\vaccinationapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|solutionrelative:vaccinationapi\\vaccinationapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\vaccineapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\vaccineapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\citizenapi\\models\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,26 +131,6 @@
       "RelativeMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|solutionrelative:citizenapi\\models\\ward.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\citizenapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|solutionrelative:citizenapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\citizenapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|solutionrelative:citizenapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\data\\vaccinedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\data\\vaccinedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\citizenapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|solutionrelative:citizenapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -63,56 +139,16 @@
       "RelativeMoniker": "D:0:0:{FF8A2526-0E82-495F-91F8-FE8F30107EE4}|CitizenAPI\\CitizenAPI.csproj|solutionrelative:citizenapi\\citizenapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccinationapi\\models\\vaccinationhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|solutionrelative:vaccinationapi\\models\\vaccinationhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccinationapi\\models\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|solutionrelative:vaccinationapi\\models\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccinationapi\\controllers\\vaccinationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|solutionrelative:vaccinationapi\\controllers\\vaccinationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\data\\vaccinedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\data\\vaccinedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccinationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|solutionrelative:vaccinationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\vaccineapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\vaccineapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\authapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\authapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccinationapi\\data\\vaccinedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13BC315E-3312-4ECE-8B5A-9B0A52FFCB14}|VaccinationAPI\\VaccinationAPI.csproj|solutionrelative:vaccinationapi\\data\\vaccinedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\vaccineapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|solutionrelative:vaccineapi\\vaccineapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{622BBD9C-221C-4EA0-A573-B05B2B677128}|VaccineAPI\\VaccineAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\vaccineapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -123,20 +159,12 @@
       "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\middleware\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\middleware\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|e:\\kthdv\\vaccinemanagement-soa\\serviceapi\\authapi\\authapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5E851E98-5714-438E-8E77-BD02A513829A}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\authapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -146,7 +174,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -166,106 +194,132 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Ward.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Models\\Ward.cs",
-              "RelativeDocumentMoniker": "CitizenAPI\\Models\\Ward.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Models\\Ward.cs",
-              "RelativeToolTip": "CitizenAPI\\Models\\Ward.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "RegistrationsController.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Controllers\\RegistrationsController.cs",
+              "RelativeDocumentMoniker": "VaccinationAPI\\Controllers\\RegistrationsController.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Controllers\\RegistrationsController.cs",
+              "RelativeToolTip": "VaccinationAPI\\Controllers\\RegistrationsController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAYwIMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T03:19:43.442Z",
+              "WhenOpened": "2024-12-25T02:48:36.661Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Controllers\\UsersController.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "AuthAPI\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAUwJIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T07:01:57.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CitizensController.cs",
               "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Controllers\\CitizensController.cs",
               "RelativeDocumentMoniker": "CitizenAPI\\Controllers\\CitizensController.cs",
               "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Controllers\\CitizensController.cs",
               "RelativeToolTip": "CitizenAPI\\Controllers\\CitizensController.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAwwHIAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAIwKAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T03:54:58.683Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Citizen.cs",
               "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Models\\Citizen.cs",
               "RelativeDocumentMoniker": "CitizenAPI\\Models\\Citizen.cs",
               "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Models\\Citizen.cs",
               "RelativeToolTip": "CitizenAPI\\Models\\Citizen.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBgAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwA0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T03:15:08.348Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VaccinesController.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Controllers\\VaccinesController.cs",
-              "RelativeDocumentMoniker": "VaccineAPI\\Controllers\\VaccinesController.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Controllers\\VaccinesController.cs",
-              "RelativeToolTip": "VaccineAPI\\Controllers\\VaccinesController.cs",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAAAJEAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CitizenDTO.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\DTOs\\CitizenDTO.cs",
+              "RelativeDocumentMoniker": "VaccinationAPI\\DTOs\\CitizenDTO.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\DTOs\\CitizenDTO.cs",
+              "RelativeToolTip": "VaccinationAPI\\DTOs\\CitizenDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T09:47:09.931Z",
+              "WhenOpened": "2024-12-26T02:18:48.225Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "VaccineDTO.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\DTOs\\VaccineDTO.cs",
+              "RelativeDocumentMoniker": "VaccinationAPI\\DTOs\\VaccineDTO.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\DTOs\\VaccineDTO.cs",
+              "RelativeToolTip": "VaccinationAPI\\DTOs\\VaccineDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T14:37:41.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VaccinationHistoriesController.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Controllers\\VaccinationHistoriesController.cs",
+              "RelativeDocumentMoniker": "VaccinationAPI\\Controllers\\VaccinationHistoriesController.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Controllers\\VaccinationHistoriesController.cs",
+              "RelativeToolTip": "VaccinationAPI\\Controllers\\VaccinationHistoriesController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T01:32:10.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Vaccine.cs",
               "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Models\\Vaccine.cs",
               "RelativeDocumentMoniker": "VaccineAPI\\Models\\Vaccine.cs",
               "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Models\\Vaccine.cs",
               "RelativeToolTip": "VaccineAPI\\Models\\Vaccine.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBIAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T09:35:08.834Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VaccineDetail.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Models\\VaccineDetail.cs",
-              "RelativeDocumentMoniker": "VaccineAPI\\Models\\VaccineDetail.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Models\\VaccineDetail.cs",
-              "RelativeToolTip": "VaccineAPI\\Models\\VaccineDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Program.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Program.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Program.cs",
+              "RelativeToolTip": "AuthAPI\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwvyQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T09:35:37.487Z",
+              "WhenOpened": "2024-12-24T06:57:58.967Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Province.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Models\\Province.cs",
-              "RelativeDocumentMoniker": "CitizenAPI\\Models\\Province.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Models\\Province.cs",
-              "RelativeToolTip": "CitizenAPI\\Models\\Province.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T03:18:52.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "District.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Models\\District.cs",
-              "RelativeDocumentMoniker": "CitizenAPI\\Models\\District.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Models\\District.cs",
-              "RelativeToolTip": "CitizenAPI\\Models\\District.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T03:19:15.198Z",
+              "DocumentIndex": 11,
+              "Title": "AuthAPI.csproj",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\AuthAPI.csproj",
+              "RelativeDocumentMoniker": "AuthAPI\\AuthAPI.csproj",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\AuthAPI.csproj",
+              "RelativeToolTip": "AuthAPI\\AuthAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwAwAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-24T08:25:16.815Z",
               "EditorCaption": ""
             },
             {
@@ -274,150 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "CitizenAPI\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "CitizenAPI\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T03:48:39.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "AuthAPI\\Controllers\\UsersController.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "AuthAPI\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAUwDgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T07:01:57.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Program.cs",
-              "RelativeDocumentMoniker": "CitizenAPI\\Program.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Program.cs",
-              "RelativeToolTip": "CitizenAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T03:13:57.263Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "VaccineDbContext.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Data\\VaccineDbContext.cs",
-              "RelativeDocumentMoniker": "VaccineAPI\\Data\\VaccineDbContext.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Data\\VaccineDbContext.cs",
-              "RelativeToolTip": "VaccineAPI\\Data\\VaccineDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T09:36:09.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Program.cs",
-              "RelativeDocumentMoniker": "VaccineAPI\\Program.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Program.cs",
-              "RelativeToolTip": "VaccineAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T08:34:36.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CitizenAPI.http",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\CitizenAPI.http",
-              "RelativeDocumentMoniker": "CitizenAPI\\CitizenAPI.http",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\CitizenAPI.http",
-              "RelativeToolTip": "CitizenAPI\\CitizenAPI.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-12-25T03:13:28.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "CitizenAPI\\appsettings.json",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\appsettings.json",
-              "RelativeToolTip": "CitizenAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-25T03:14:43.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "VaccinationHistory.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Models\\VaccinationHistory.cs",
-              "RelativeDocumentMoniker": "VaccinationAPI\\Models\\VaccinationHistory.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Models\\VaccinationHistory.cs",
-              "RelativeToolTip": "VaccinationAPI\\Models\\VaccinationHistory.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAkwAkAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T02:45:53.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Registration.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Models\\Registration.cs",
-              "RelativeDocumentMoniker": "VaccinationAPI\\Models\\Registration.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Models\\Registration.cs",
-              "RelativeToolTip": "VaccinationAPI\\Models\\Registration.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAowAoAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T02:45:34.558Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "VaccinationController.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Controllers\\VaccinationController.cs",
-              "RelativeDocumentMoniker": "VaccinationAPI\\Controllers\\VaccinationController.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Controllers\\VaccinationController.cs",
-              "RelativeToolTip": "VaccinationAPI\\Controllers\\VaccinationController.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAIwAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T02:48:36.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "VaccineDbContext.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Data\\VaccineDbContext.cs",
-              "RelativeDocumentMoniker": "AuthAPI\\Data\\VaccineDbContext.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Data\\VaccineDbContext.cs",
-              "RelativeToolTip": "AuthAPI\\Data\\VaccineDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T06:53:50.787Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\appsettings.json",
               "RelativeDocumentMoniker": "VaccineAPI\\appsettings.json",
@@ -430,72 +341,124 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Program.cs",
+              "RelativeDocumentMoniker": "VaccineAPI\\Program.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Program.cs",
+              "RelativeToolTip": "VaccineAPI\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvxoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T08:34:36.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "VaccinationAPI\\appsettings.json",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\appsettings.json",
+              "RelativeToolTip": "VaccinationAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-25T08:40:37.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Program.cs",
               "RelativeDocumentMoniker": "VaccinationAPI\\Program.cs",
               "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Program.cs",
               "RelativeToolTip": "VaccinationAPI\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T02:51:18.417Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "VaccineAPI",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\VaccineAPI.csproj",
-              "RelativeDocumentMoniker": "VaccineAPI\\VaccineAPI.csproj",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\VaccineAPI.csproj",
-              "RelativeToolTip": "VaccineAPI\\VaccineAPI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-25T03:13:41.679Z",
+              "DocumentIndex": 12,
+              "Title": "VaccinesController.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Controllers\\VaccinesController.cs",
+              "RelativeDocumentMoniker": "VaccineAPI\\Controllers\\VaccinesController.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Controllers\\VaccinesController.cs",
+              "RelativeToolTip": "VaccineAPI\\Controllers\\VaccinesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:47:09.931Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 15,
+              "Title": "VaccineDbContext.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Data\\VaccineDbContext.cs",
+              "RelativeDocumentMoniker": "VaccineAPI\\Data\\VaccineDbContext.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Data\\VaccineDbContext.cs",
+              "RelativeToolTip": "VaccineAPI\\Data\\VaccineDbContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwBoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:36:09.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "VaccineDbContext.cs",
               "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Data\\VaccineDbContext.cs",
               "RelativeDocumentMoniker": "VaccinationAPI\\Data\\VaccineDbContext.cs",
               "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Data\\VaccineDbContext.cs",
               "RelativeToolTip": "VaccinationAPI\\Data\\VaccineDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T02:50:26.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AuthAPI.http",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\AuthAPI.http",
-              "RelativeDocumentMoniker": "AuthAPI\\AuthAPI.http",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\AuthAPI.http",
-              "RelativeToolTip": "AuthAPI\\AuthAPI.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-12-24T06:59:19.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "VaccineAPI\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "VaccineAPI\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "VaccinationHistory.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Models\\VaccinationHistory.cs",
+              "RelativeDocumentMoniker": "VaccinationAPI\\Models\\VaccinationHistory.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Models\\VaccinationHistory.cs",
+              "RelativeToolTip": "VaccinationAPI\\Models\\VaccinationHistory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T09:45:32.572Z",
+              "WhenOpened": "2024-12-25T02:45:53.535Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 18,
+              "Title": "Registration.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Models\\Registration.cs",
+              "RelativeDocumentMoniker": "VaccinationAPI\\Models\\Registration.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Models\\Registration.cs",
+              "RelativeToolTip": "VaccinationAPI\\Models\\Registration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T02:45:34.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "VaccineDetail.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Models\\VaccineDetail.cs",
+              "RelativeDocumentMoniker": "VaccineAPI\\Models\\VaccineDetail.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Models\\VaccineDetail.cs",
+              "RelativeToolTip": "VaccineAPI\\Models\\VaccineDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:35:37.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Models\\User.cs",
               "RelativeDocumentMoniker": "AuthAPI\\Models\\User.cs",
@@ -508,33 +471,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "AuthAPI\\appsettings.json",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\appsettings.json",
-              "RelativeToolTip": "AuthAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-24T06:54:41.182Z",
+              "DocumentIndex": 21,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "CitizenAPI\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "CitizenAPI\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T03:48:39.442Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "VaccineAPI\\WeatherForecast.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\WeatherForecast.cs",
-              "RelativeToolTip": "VaccineAPI\\WeatherForecast.cs",
+              "DocumentIndex": 22,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "VaccineAPI\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "VaccineAPI\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T09:47:33.135Z",
+              "WhenOpened": "2024-12-24T09:45:32.572Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 23,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "VaccinationAPI\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "VaccinationAPI\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T10:06:44.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "VaccineAPI.http",
               "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\VaccineAPI.http",
               "RelativeDocumentMoniker": "VaccineAPI\\VaccineAPI.http",
@@ -547,7 +523,167 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Program.cs",
+              "RelativeDocumentMoniker": "CitizenAPI\\Program.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Program.cs",
+              "RelativeToolTip": "CitizenAPI\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T03:13:57.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CitizenAPI",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\CitizenAPI.csproj",
+              "RelativeDocumentMoniker": "CitizenAPI\\CitizenAPI.csproj",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\CitizenAPI.csproj",
+              "RelativeToolTip": "CitizenAPI\\CitizenAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-25T09:50:44.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "VaccinationAPI.http",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\VaccinationAPI.http",
+              "RelativeDocumentMoniker": "VaccinationAPI\\VaccinationAPI.http",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccinationAPI\\VaccinationAPI.http",
+              "RelativeToolTip": "VaccinationAPI\\VaccinationAPI.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-12-25T08:49:45.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "VaccineAPI.csproj",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\VaccineAPI.csproj",
+              "RelativeDocumentMoniker": "VaccineAPI\\VaccineAPI.csproj",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\VaccineAPI.csproj",
+              "RelativeToolTip": "VaccineAPI\\VaccineAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-25T03:13:41.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Ward.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Models\\Ward.cs",
+              "RelativeDocumentMoniker": "CitizenAPI\\Models\\Ward.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Models\\Ward.cs",
+              "RelativeToolTip": "CitizenAPI\\Models\\Ward.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T03:19:43.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Province.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Models\\Province.cs",
+              "RelativeDocumentMoniker": "CitizenAPI\\Models\\Province.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Models\\Province.cs",
+              "RelativeToolTip": "CitizenAPI\\Models\\Province.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T03:18:52.319Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 29,
+              "Title": "District.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Models\\District.cs",
+              "RelativeDocumentMoniker": "CitizenAPI\\Models\\District.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\Models\\District.cs",
+              "RelativeToolTip": "CitizenAPI\\Models\\District.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T03:19:15.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CitizenAPI.http",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\CitizenAPI.http",
+              "RelativeDocumentMoniker": "CitizenAPI\\CitizenAPI.http",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\CitizenAPI.http",
+              "RelativeToolTip": "CitizenAPI\\CitizenAPI.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-12-25T03:13:28.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "CitizenAPI\\appsettings.json",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\CitizenAPI\\appsettings.json",
+              "RelativeToolTip": "CitizenAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-25T03:14:43.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "VaccineDbContext.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Data\\VaccineDbContext.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Data\\VaccineDbContext.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Data\\VaccineDbContext.cs",
+              "RelativeToolTip": "AuthAPI\\Data\\VaccineDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T06:53:50.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "AuthAPI.http",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\AuthAPI.http",
+              "RelativeDocumentMoniker": "AuthAPI\\AuthAPI.http",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\AuthAPI.http",
+              "RelativeToolTip": "AuthAPI\\AuthAPI.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-12-24T06:59:19.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "AuthAPI\\appsettings.json",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\appsettings.json",
+              "RelativeToolTip": "AuthAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-24T06:54:41.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "VaccineAPI\\WeatherForecast.cs",
+              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\VaccineAPI\\WeatherForecast.cs",
+              "RelativeToolTip": "VaccineAPI\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:47:33.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "AuthAPI\\Controllers\\WeatherForecastController.cs",
@@ -555,12 +691,11 @@
               "RelativeToolTip": "AuthAPI\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T08:38:36.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T08:38:36.362Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 39,
               "Title": "JwtMiddleware.cs",
               "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Middleware\\JwtMiddleware.cs",
               "RelativeDocumentMoniker": "AuthAPI\\Middleware\\JwtMiddleware.cs",
@@ -568,25 +703,11 @@
               "RelativeToolTip": "AuthAPI\\Middleware\\JwtMiddleware.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T07:05:55.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T07:05:55.963Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Program.cs",
-              "RelativeDocumentMoniker": "AuthAPI\\Program.cs",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\Program.cs",
-              "RelativeToolTip": "AuthAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T06:57:58.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 40,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "AuthAPI\\WeatherForecast.cs",
@@ -594,21 +715,7 @@
               "RelativeToolTip": "AuthAPI\\WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T08:44:03.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "AuthAPI.csproj",
-              "DocumentMoniker": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\AuthAPI.csproj",
-              "RelativeDocumentMoniker": "AuthAPI\\AuthAPI.csproj",
-              "ToolTip": "E:\\kthdv\\VaccineManagement-SOA\\serviceAPI\\AuthAPI\\AuthAPI.csproj",
-              "RelativeToolTip": "AuthAPI\\AuthAPI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-24T08:25:16.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T08:44:03.444Z"
             }
           ]
         },

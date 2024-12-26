@@ -1,13 +1,26 @@
-﻿namespace VaccinationAPI.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace VaccinationAPI.Models
 {
+    [Table("vaccination_history")]
     public class VaccinationHistory
     {
-        public int Id { get; set; }
-        public int CitizenId { get; set; }
-        public int VaccineId { get; set; }
+        [Key]
+        [Column("id")]
+        public long Id { get; set; }
+
+        [Column("citizen_id")]
+        public long CitizenId { get; set; }
+
+        [Column("vaccine_id")]
+        public long VaccineId { get; set; }
+
+        [Column("vaccination_date")]
         public DateTime VaccinationDate { get; set; }
-        public int DoseNumber { get; set; }
-        public string? VaccineBatch { get; set; }
+
+        [Column("status")]
+        public String? Status { get; set; }
     }
 
 }

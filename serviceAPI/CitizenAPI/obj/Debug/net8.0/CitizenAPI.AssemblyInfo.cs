@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CitizenAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc0f5e26cdde1bba0c2cbd9b6627b0d56277cb7f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c2e0d62d77a3e314095e23d36f3b2ffb88a3328")]
 [assembly: System.Reflection.AssemblyProductAttribute("CitizenAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CitizenAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

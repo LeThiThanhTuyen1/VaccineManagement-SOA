@@ -62,7 +62,6 @@ CREATE TABLE registrations (
     citizen_id BIGINT,                  -- Mã công dân
     vaccine_id BIGINT,                  -- Mã vắc xin
     registration_date DATE,             -- Ngày đăng ký
-    vaccination_date DATE,              -- Ngày dự kiến tiêm
     location NVARCHAR(255),             -- Địa điểm tiêm
     status VARCHAR(10) CHECK (status IN ('PENDING', 'COMPLETED', 'CANCELLED')) DEFAULT 'PENDING',
     FOREIGN KEY (citizen_id) REFERENCES citizens(id),

@@ -44,6 +44,39 @@ namespace VaccineAPI.Controllers
             return Ok(vaccines);
         }
 
+        // GET: api/Vaccines/{id}
+        [HttpGet("{id}")]
+        [Authorize]
+        public async Task<ActionResult<object>> GetVaccineById(long id)
+        {
+            var vaccine = await _context.Vaccines
+                .Include(v => v.VaccineDetails) 
+                .Select(v => new
+                {
+                    v.Id,
+                    v.Name,
+                    v.Manufacturer,
+                    v.ExpirationDate,
+                    v.Quantity,
+                    v.Description,
+                    Details = v.VaccineDetails.Select(d => new
+                    {
+                        d.DetailId,
+                        d.ProviderName,
+                        d.Price,
+                        d.Status
+                    }).ToList()
+                })
+                .FirstOrDefaultAsync(v => v.Id == id);
+
+            if (vaccine == null)
+            {
+                return NotFound("Không tìm thấy vắc xin.");
+            }
+
+            return Ok(vaccine);
+        }
+
         // POST: api/Vaccines
         [HttpPost]
         [Authorize(Roles = "Admin")]

@@ -27,7 +27,9 @@ namespace VaccineAPI.Data
             modelBuilder.Entity<VaccineDetail>(entity =>
             {
                 entity.HasKey(d => d.DetailId);
-                entity.ToTable("vaccine_details");
+                entity.ToTable("vaccine_details")
+                        .Property(v => v.Price)
+                        .HasPrecision(18, 2);
             });
         }
     }
