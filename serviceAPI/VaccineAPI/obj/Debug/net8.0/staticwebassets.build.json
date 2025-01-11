@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "XsR9kavYpcl1U2cZPGgXXuG3QuIxROmsE92+EA5krdA=",
+  "Source": "VaccineAPI",
+  "BasePath": "_content/VaccineAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
