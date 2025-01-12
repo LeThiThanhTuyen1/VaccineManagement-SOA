@@ -28,7 +28,6 @@ export class LoginComponent implements OnInit {
         // Chuyển hướng đến trang chủ hoặc trang bạn muốn
         this.router.navigate(['/home-manager']);
         // this.errorMessage = 'Đăng nhập thành công.';
-
       },
       (error) => {
         this.errorMessage = 'Đăng nhập thất bại. Kiểm tra lại thông tin đăng nhập.';

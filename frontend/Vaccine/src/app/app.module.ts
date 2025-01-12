@@ -5,11 +5,11 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { LoginComponent } from './component/login/login.component';
 import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { UserListComponent } from './component/user-list/user-list.component';
 import { FooterComponent } from './component/backet/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './component/backet/header/header.component';
 import { HomeManagerComponent } from './component/home-manager/home-manager.component';
-
 
 @NgModule({
   declarations: [
@@ -18,14 +18,17 @@ import { HomeManagerComponent } from './component/home-manager/home-manager.comp
     FooterComponent,
     HeaderComponent,
     HomeManagerComponent
+    UserListComponent
   ],
 
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([])
   ],
+
   providers: [
     provideClientHydration(withEventReplay()),
     provideAnimationsAsync(),
