@@ -1,30 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration, withEventReplay } from '@angular/platform-browser';
-
+import { MatTableModule } from '@angular/material/table';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { VaccineComponent } from './components/vaccine/vaccine.component';
-import { ComponentsComponent } from './components/components.component';
-import { EditComponent } from './components/vaccine/edit/edit.component';
-import { ListComponent } from './components/vaccine/list/list.component';
-import { HeaderComponent } from './components/backet/header/header.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { LoginComponent } from './component/login/login.component';
+import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    VaccineComponent,
-    ComponentsComponent,
-    EditComponent,
-    ListComponent,
-    HeaderComponent
+    LoginComponent
+
   ],
 
   imports: [
     BrowserModule,
-    AppRoutingModule
+    MatTableModule,
+    HttpClientModule,
+    FormsModule,
+    AppRoutingModule,
   ],
   providers: [
-    provideClientHydration(withEventReplay())
+    provideClientHydration(withEventReplay()),
+    provideAnimationsAsync(),
+    provideHttpClient(withFetch()),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })

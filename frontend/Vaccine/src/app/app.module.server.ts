@@ -2,7 +2,6 @@
 import { ServerModule } from '@angular/platform-server';
 import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 // Angular SSR doesn't require `provideServerRoutesConfig` in most setups
@@ -13,4 +12,4 @@ import { NgModule } from '@angular/core';
   ],
   bootstrap: [AppComponent] // Bootstraps your root component
 })
-export class AppServerModule {}
+export class AppServerModule { }
