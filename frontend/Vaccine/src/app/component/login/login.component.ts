@@ -26,8 +26,8 @@ export class LoginComponent implements OnInit {
         this.authService.saveToken(response.token);
 
         // Chuyển hướng đến trang chủ hoặc trang bạn muốn
-        //this.router.navigate(['/home']);
-        this.errorMessage = 'Đăng nhập thành công.';
+        this.router.navigate(['/home-manager']);
+        // this.errorMessage = 'Đăng nhập thành công.';
 
       },
       (error) => {
