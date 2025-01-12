@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../../service/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,13 +9,23 @@ import { Component } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
-  isManager: boolean = false;  // Set this based on your logic
-  isAdmin: boolean = false;    // Set this based on your logic
+export class HeaderComponent implements OnInit {
+  isManager: boolean = false;  
+  isAdmin: boolean = false;   
 
-  constructor() {
-    // For demonstration, toggle the roles (In real app, use authentication service)
-    this.isManager = true;  // Or get the role from a service
-    this.isAdmin = false;   // Adjust these values as per user role
+  constructor(private authService: AuthService, private router: Router) {}
+  
+  ngOnInit(): void {
+    const role = this.authService.getRole();
+    if (role === 'ADMIN') {
+      this.isAdmin = true;
+    } else if (role === 'MANAGER') {
+      this.isManager = true;
+    }
+  }
+
+  logout(): void {
+    this.authService.logout(); 
+    this.router.navigate(['/login']); 
   }
 }

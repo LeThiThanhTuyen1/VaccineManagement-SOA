@@ -26,6 +26,16 @@ export class AuthService {
     return localStorage.getItem('token');
   }
 
+  // Hàm lưu token vào localStorage
+  saveRole(role: string): void {
+    localStorage.setItem('role', role);
+  }
+
+  // Hàm lấy token từ localStorage
+  getRole(): string | null {
+    return localStorage.getItem('role');
+  }
+
   // Hàm kiểm tra người dùng đã đăng nhập hay chưa
   isLoggedIn(): boolean {
     return this.getToken() !== null;
@@ -40,5 +50,6 @@ export class AuthService {
   // Hàm đăng xuất
   logout(): void {
     localStorage.removeItem('token');
+    localStorage.removeItem('role');
   }
 }

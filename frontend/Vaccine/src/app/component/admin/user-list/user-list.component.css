@@ -1,0 +1,117 @@
+.container {
+    padding-left: 20px; 
+    padding-right: 20px; 
+}
+
+h2 {
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.btn.btn-primary {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.alert {
+    color: #fb2b06;
+    padding-top: 20px;
+}
+
+.btn.btn-primary:hover {
+    background-color: #218838;
+}
+
+/* Input styling */
+input[type="text"] {
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 15px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-danger {
+    background-color: #f32602!important;
+    padding: 10px 13px!important;
+}
+
+.btn-danger:hover {
+    background-color: #cd2c10;
+}
+
+button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 36px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+form button[type="submit"], .btn-warning, .btn-danger {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+/* Danger button style (Delete) */
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    table th, table td {
+        padding: 6px; 
+    }
+
+    .btn.btn-primary, .btn-warning, .btn-danger {
+        font-size: 14px;
+    }
+}

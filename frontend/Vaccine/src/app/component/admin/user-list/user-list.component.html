@@ -1,0 +1,41 @@
+  <div class="container">
+    <h2>Danh sách Tài Khoản</h2>
+
+    <div>
+        <button routerLink="/add-user" class="btn btn-primary">Thêm tài khoản</button>
+    </div>
+
+    <form (submit)="searchUsers()">
+        <input type="text" [(ngModel)]="username" name="username" placeholder="Nhập tên tài khoản để tìm kiếm..." />
+        <button type="submit">Tìm kiếm</button>
+    </form>      
+  
+    <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Vai trò</th>
+          <th>Trạng thái</th>
+          <th>Hành động</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.username }}</td>
+          <td>{{ user.role }}</td>
+          <td>{{ user.enabled ? 'Đã kích hoạt' : 'Chưa kích hoạt' }}</td>
+          <td>
+            <button *ngIf="user.enabled" (click)="deactivateUser(user.id)" class=" btn btn-danger">
+              Tắt tài khoản
+            </button>
+            <button type="submit" *ngIf="!user.enabled" (click)="activateUser(user.id)">
+              Kích hoạt tài khoản
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

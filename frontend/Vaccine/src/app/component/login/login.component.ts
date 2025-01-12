@@ -12,21 +12,26 @@ export class LoginComponent implements OnInit {
   username: string = '';
   password: string = '';
   errorMessage: string = '';
-
+ 
   constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit(): void { }
 
   onLogin(): void {
-    console.log(this.username)
-    console.log(this.password)
     this.authService.login(this.username, this.password).subscribe(
       (response) => {
+
         // Lưu token vào localStorage
         this.authService.saveToken(response.token);
+        this.authService.saveRole(response.role);
+        if(this.authService.getRole() == 'ADMIN') {
+          this.router.navigate(['/home-admin']);
+        }
+        else {
+          this.router.navigate(['/home-manager']);
+        }
 
         // Chuyển hướng đến trang chủ hoặc trang bạn muốn
-        this.router.navigate(['/home-manager']);
         // this.errorMessage = 'Đăng nhập thành công.';
       },
       (error) => {

@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>Thêm Tài Khoản Mới</h2>
+    <div *ngIf="errorMessage" class="error" style="color: red;">
+        <p>{{ errorMessage }}</p>
+    </div>
+    <form (ngSubmit)="onSubmit()" #addAccountForm="ngForm">
+        <div class="form-group">
+            <label for="username">Tên tài khoản:</label>
+            <input placeholder="Nhập tên tài khoản" type="text" id="username" name="username" [(ngModel)]="newUser.username" required />
+        </div>
+        <div class="form-group">
+            <label for="password">Mật khẩu:</label>
+            <input placeholder="Nhập mật khẩu" type="password" id="password" name="password" [(ngModel)]="newUser.password" required />
+        </div>
+        <div class="form-group">
+            <label for="role">Vai trò:</label>
+            <select id="role" name="role" [(ngModel)]="newUser.role" required>
+                <option value="ADMIN">ADMIN</option>
+                <option value="MANAGER">MANAGER</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn-save">Lưu tài khoản</button>
+        </div>
+    </form>
+</div>
