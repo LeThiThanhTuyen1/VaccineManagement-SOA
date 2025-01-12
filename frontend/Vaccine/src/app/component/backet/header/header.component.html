@@ -14,13 +14,13 @@
 
         <!-- Display menu for Admin -->
         <ul *ngIf="isAdmin" class="menu">
-            <li><a routerLink="/users/manage">Tài khoản</a></li>
+            <li><a routerLink="/user-list">Tài khoản</a></li>
             <li><a routerLink="/vaccines">Vắc xin</a></li>
         </ul>
 
         <!-- Logout link -->
         <div class="logout">
-            <a routerLink="/logout">Đăng xuất</a>
+            <a href="javascript:void(0)" (click)="logout()">Đăng xuất</a>
         </div>
     </nav>
 </header>

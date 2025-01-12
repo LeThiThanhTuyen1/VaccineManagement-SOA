@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 20px;
+    width: 500px;
+    margin: 0 auto; /* Center the container */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn-save {
+    width: 100%;
+    padding: 10px;
+    background-color: #2bba12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-save:hover {
+    background-color: #1da00c;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Add Vaccine Page Styles */
+#add-vaccine-page {
+    font-family: Arial, sans-serif;
+}
+
+#add-vaccine-page .container {
+    padding: 20px;
+}
+
+#add-vaccine-page h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#add-vaccine-page .form-group {
+    margin-bottom: 15px;
+}
+
+#add-vaccine-page .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#add-vaccine-page .form-group input,
+#add-vaccine-page .form-group select,
+#add-vaccine-page .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#add-vaccine-page .btn-save {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+#add-vaccine-page .btn-save:hover {
+    background-color: #e0a800;
+}
+
+#add-vaccine-page .error {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
