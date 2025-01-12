@@ -7,12 +7,14 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { LoginComponent } from './component/login/login.component';
 import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-
+import { UserListComponent } from './component/user-list/user-list.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    UserListComponent
 
   ],
 
@@ -22,7 +24,9 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
+    RouterModule.forRoot([]),
   ],
+
   providers: [
     provideClientHydration(withEventReplay()),
     provideAnimationsAsync(),

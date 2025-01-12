@@ -31,6 +31,12 @@ export class AuthService {
     return this.getToken() !== null;
   }
 
+  // Tạo header chứa token
+  getAuthHeaders(): HttpHeaders {
+    const token = this.getToken();
+    return token ? new HttpHeaders().set('Authorization', `Bearer ${token}`) : new HttpHeaders();
+  }
+
   // Hàm đăng xuất
   logout(): void {
     localStorage.removeItem('token');

@@ -1,0 +1,12 @@
+<div *ngIf="errorMessage" class="error">
+    <p>{{ errorMessage }}</p>
+</div>
+
+<div *ngIf="!errorMessage">
+    <h2>User List</h2>
+    <ul>
+        <li *ngFor="let user of users">
+            {{ user.username }} - {{ user.password }}
+        </li>
+    </ul>
+</div>
