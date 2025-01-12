@@ -1,0 +1,26 @@
+<header>
+    <div class="header-top">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo" class="logo-image">
+            <span class="system-name">QUẢN LÝ TIÊM CHỦNG</span>
+        </div>
+    </div>
+    <nav class="menu-bar">
+        <!-- Display menu for Manager -->
+        <ul *ngIf="isManager" class="menu">
+            <li><a routerLink="/vaccination-history/search">Tra cứu</a></li>
+            <li><a routerLink="/citizens/management">Nhóm đối tượng</a></li>
+        </ul>
+
+        <!-- Display menu for Admin -->
+        <ul *ngIf="isAdmin" class="menu">
+            <li><a routerLink="/users/manage">Tài khoản</a></li>
+            <li><a routerLink="/vaccines">Vắc xin</a></li>
+        </ul>
+
+        <!-- Logout link -->
+        <div class="logout">
+            <a routerLink="/logout">Đăng xuất</a>
+        </div>
+    </nav>
+</header>
