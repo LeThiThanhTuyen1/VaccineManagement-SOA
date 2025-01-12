@@ -69,10 +69,10 @@ public class UsersController : ControllerBase
 
 
         var token = tokenHandler.CreateToken(tokenDescriptor);
-        var role = user.Role;
+
         _context.SaveChanges();
 
-        return Ok(new { Token = tokenHandler.WriteToken(token) , role = dbUser.Role});
+        return Ok(new { Token = tokenHandler.WriteToken(token) });
     }
 
     // POST: api/Users/register
@@ -101,40 +101,40 @@ public class UsersController : ControllerBase
         var user = _context.Users.Find(id);
         if (user == null)
         {
-            return NotFound(new { message = "Không tìm thấy người dùng." });
+            return NotFound("Không tìm thấy người dùng.");
         }
 
         if (user.Enabled)
         {
-            return BadRequest(new { message = "Tài khoản đã được kích hoạt." });
+            return BadRequest("Tài khoản đã được kích hoạt.");
         }
 
         user.Enabled = true;
         _context.SaveChanges();
 
-        return Ok(new { message = "Tài khoản đã được kích hoạt thành công." });
+        return Ok("Tài khoản đã được kích hoạt thành công.");
     }
 
     // PUT: api/Users/deactivate/5
     [HttpPut("deactivate/{id}")]
-    [Authorize(Roles = "ADMIN")]
+    [Authorize(Roles = "ADMIN")] 
     public IActionResult DeactivateAccount(int id)
     {
         var user = _context.Users.Find(id);
         if (user == null)
         {
-            return NotFound(new { message = "Không tìm thấy người dùng." });
+            return NotFound("Không tìm thấy người dùng.");
         }
 
         if (!user.Enabled)
         {
-            return BadRequest(new { message = "Tài khoản đã bị vô hiệu hóa." });
+            return BadRequest("Tài khoản đã bị vô hiệu hóa.");
         }
 
         user.Enabled = false;
         _context.SaveChanges();
 
-        return Ok(new { message = "Tài khoản đã bị vô hiệu hóa thành công." });
+        return Ok("Tài khoản đã bị vô hiệu hóa thành công.");
     }
 
     // Hàm kiểm tra mật khẩu đã băm
@@ -146,28 +146,6 @@ public class UsersController : ControllerBase
             var hashedPassword = Convert.ToBase64String(hashedBytes);
             return hashedPassword == storedHash;
         }
-    }
-
-    // PUT: api/Users/search
-    [HttpGet("search")]
-    [Authorize(Roles = "ADMIN")]
-    public IActionResult SearchUsers([FromQuery] string username)
-    {
-        if (string.IsNullOrEmpty(username))
-        {
-            return BadRequest("Tên tài khoản không được để trống.");
-        }
-
-        var users = _context.Users
-                            .Where(u => u.Username.Contains(username))
-                            .ToList();
-
-        if (users.Count == 0)
-        {
-            return NotFound("Không tìm thấy người dùng.");
-        }
-
-        return Ok(users);
     }
 
     // Hàm băm mật khẩu khi đăng ký
