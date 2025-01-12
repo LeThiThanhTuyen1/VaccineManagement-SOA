@@ -10,6 +10,7 @@ import { FooterComponent } from './component/backet/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './component/backet/header/header.component';
 import { HomeManagerComponent } from './component/home-manager/home-manager.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { HomeManagerComponent } from './component/home-manager/home-manager.comp
     LoginComponent,
     FooterComponent,
     HeaderComponent,
-    HomeManagerComponent
+    HomeManagerComponent,
     UserListComponent
   ],
 
