@@ -14,6 +14,7 @@ import { RouterModule } from '@angular/router';
 import { AdminHomeComponent } from './component/admin/admin-home/admin-home.component';
 import { AddUserComponent } from './component/admin/add-user/add-user.component';
 import { RegistrationComponent } from './component/manager/registration/registration.component';
+import { RegistrationListComponent } from './component/manager/registration-list/registration-list.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RegistrationComponent } from './component/manager/registration/registra
     UserListComponent,
     AdminHomeComponent,
     AddUserComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    RegistrationListComponent
   ],
 
   imports: [

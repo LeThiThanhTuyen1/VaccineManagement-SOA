@@ -31,6 +31,7 @@ public class UsersController : ControllerBase
     }
 
     // POST: api/Users/login
+    // POST: api/Users/login
     [HttpPost("login")]
     public IActionResult Login([FromBody] User user)
     {
@@ -39,7 +40,13 @@ public class UsersController : ControllerBase
             return BadRequest("Tên đăng nhập và mật khẩu không được để trống.");
         }
 
-        var dbUser = _context.Users.SingleOrDefault(u => u.Username == user.Username);
+        // Tìm kiếm thông tin người dùng một cách tối ưu hóa
+        var dbUser = _context.Users
+            .AsNoTracking()
+            .Where(u => u.Username == user.Username)
+            .Select(u => new { u.Id, u.Username, u.Password, u.Role })
+            .SingleOrDefault();
+
         if (dbUser == null)
         {
             return Unauthorized("Tài khoản không tồn tại.");
@@ -57,22 +64,19 @@ public class UsersController : ControllerBase
         var tokenDescriptor = new SecurityTokenDescriptor
         {
             Subject = new ClaimsIdentity(new[]
-             {
-                new Claim(ClaimTypes.Name, dbUser.Id.ToString()),
-                new Claim(ClaimTypes.Role, dbUser.Role) 
-            }),
+            {
+            new Claim(ClaimTypes.Name, dbUser.Id.ToString()),
+            new Claim(ClaimTypes.Role, dbUser.Role)
+        }),
             Expires = DateTime.UtcNow.AddHours(1),
             SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),
             Issuer = "https://localhost:5100",
             Audience = "vaccineapi"
         };
 
-
         var token = tokenHandler.CreateToken(tokenDescriptor);
-        var role = user.Role;
-        _context.SaveChanges();
 
-        return Ok(new { Token = tokenHandler.WriteToken(token) , role = dbUser.Role});
+        return Ok(new { Token = tokenHandler.WriteToken(token), role = dbUser.Role });
     }
 
     // POST: api/Users/register

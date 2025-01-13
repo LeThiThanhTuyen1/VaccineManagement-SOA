@@ -15,7 +15,7 @@
           <!-- Option when no citizen is selected -->
           <option value="" disabled selected>- Chọn Công Dân -</option>
           <!-- List citizens -->
-          <option *ngFor="let citizen of citizens" [value]="citizen.id">{{ citizen.fullName }}</option>
+          <option *ngFor="let citizen of citizens" [value]="citizen.id">{{ citizen.fullName }} - {{ citizen.phoneNumber}}</option>
           <!-- Option when no data is available -->
           <option *ngIf="citizens.length === 0" disabled>Không có dữ liệu công dân</option>
         </select>

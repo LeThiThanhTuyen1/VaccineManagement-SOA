@@ -6,6 +6,7 @@ import { HomeManagerComponent } from './component/home-manager/home-manager.comp
 import { AdminHomeComponent } from './component/admin/admin-home/admin-home.component';
 import { AddUserComponent } from './component/admin/add-user/add-user.component';
 import { RegistrationComponent } from './component/manager/registration/registration.component';
+import { RegistrationListComponent } from './component/manager/registration-list/registration-list.component';
 
 
 
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'home-admin', component: AdminHomeComponent},
   { path: 'add-user', component: AddUserComponent},
   { path: 'registration', component: RegistrationComponent},
+  { path: 'registration-list', component: RegistrationListComponent},
   { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];
 

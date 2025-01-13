@@ -1,0 +1,132 @@
+/* Container */
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px; 
+    align-items: center;
+  }
+
+  .btn.btn-primary {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn.btn-primary:hover {
+    background-color: #218838;
+}
+
+  /* Tiêu đề */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  /* Bảng */
+  .table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    background-color: white;
+  }
+  
+  .table th {
+    background-color: #007bff; 
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f2f2f2; 
+  }
+  
+  .table tr:hover {
+    background-color: #f1f1f1; 
+  }
+  
+  .alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ffdddd;
+    background-color: #f8d7da;
+    color: #721c24;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+      max-width: 100%;
+    }
+  
+    .table th, .table td {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  .loading .spinner {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px solid rgba(0,0,0,0.1);
+    border-top-color: #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .filter-section {
+    margin-bottom: 20px ;
+  }
+
+  .form-group {
+    margin-top: 20px;
+  }
+
+  input {
+    padding: 5px;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+
+  select {
+    padding: 5px;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  
+  .filter-section .form-group {
+    margin-right: 15px;
+    display: inline-block;
+  }
+  

@@ -1,19 +1,16 @@
-body {
-    font-family: Arial, sans-serif;
+footer {
+    background-color: #00CCFF;
+    color: black;
+    text-align: center;
+    padding: 22px;
+    width: 100%;
 }
 
-footer {
-	background-color: #00CCFF; 
-    color: black; 
-    text-align: center; 
-    padding: 22px; 
-    position: fixed; 
-    bottom: 0; 
-    width: 100%; 
-}
+/* Menu trong footer */
 footer nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 footer nav ul li {
@@ -25,4 +22,4 @@ footer nav ul li a {
     color: red;
     text-decoration: none;
     font-size: 17.5px;
-}    
+}

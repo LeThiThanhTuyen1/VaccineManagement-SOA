@@ -26,7 +26,7 @@ export class RegistrationComponent implements OnInit{
     { name: 'Cơ sở 1 - Ghềnh Ráng', value: 'Cơ sở 1 - Ghềnh Ráng' },
     { name: 'Cơ sở 2 - Tây Sơn', value: 'Cơ sở 2 - Tây Sơn' }
   ];
-
+  
   errorMessage: string | null = null;
   successMessage: string | null = null;
 
