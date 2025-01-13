@@ -47,7 +47,7 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 app.UseCors(builder =>
-    builder.WithOrigins("http://localhost:5102")
+    builder.WithOrigins("http://localhost:5102", "http://localhost:4200")
            .AllowAnyMethod()
            .AllowAnyHeader()
 );
@@ -60,7 +60,7 @@ if (app.Environment.IsDevelopment())
 }
 
 // Cấu hình middleware
-app.UseAuthentication();  
+app.UseAuthentication();
 app.UseAuthorization();
 app.UseMiddleware<JwtMiddleware>();
 

@@ -1,0 +1,58 @@
+<div *ngIf="errorMessage" class="error">
+    <p>{{ errorMessage }}</p>
+</div>
+
+<h2>Vaccine Management</h2>
+
+<!-- Form Thêm Vaccine -->
+<div>
+    <h3>Add Vaccine</h3>
+    <form (submit)="addVaccine()">
+        <label>
+            Name:
+            <input type="text" [(ngModel)]="newVaccine.name" name="name" required />
+        </label>
+        <label>
+            Description:
+            <input type="text" [(ngModel)]="newVaccine.description" name="description" required />
+        </label>
+        <label>
+            Dose:
+            <input type="text" [(ngModel)]="newVaccine.dose" name="dose" required />
+        </label>
+        <button type="submit">Add</button>
+    </form>
+</div>
+
+<!-- Danh sách Vaccine -->
+<div>
+    <h3>Vaccine List</h3>
+    <ul>
+        <li *ngFor="let vaccine of vaccines">
+            {{ vaccine.name }} - {{ vaccine.description }} - {{ vaccine.dose }}
+            <button (click)="startEdit(vaccine)">Edit</button>
+            <button (click)="deleteVaccine(vaccine.id)">Delete</button>
+        </li>
+    </ul>
+</div>
+
+<!-- Form Sửa Vaccine -->
+<div *ngIf="editVaccine">
+    <h3>Edit Vaccine</h3>
+    <form (submit)="updateVaccine()">
+        <label>
+            Name:
+            <input type="text" [(ngModel)]="editVaccine.name" name="editName" required />
+        </label>
+        <label>
+            Description:
+            <input type="text" [(ngModel)]="editVaccine.description" name="editDescription" required />
+        </label>
+        <label>
+            Dose:
+            <input type="text" [(ngModel)]="editVaccine.dose" name="editDose" required />
+        </label>
+        <button type="submit">Save</button>
+        <button type="button" (click)="editVaccine = null">Cancel</button>
+    </form>
+</div>

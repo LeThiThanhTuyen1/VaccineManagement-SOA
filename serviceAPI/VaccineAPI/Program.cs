@@ -44,7 +44,7 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 app.UseCors(builder =>
-    builder.WithOrigins("http://localhost:5102")
+    builder.WithOrigins("http://localhost:5102", "http://localhost:4200")
            .AllowAnyMethod()
            .AllowAnyHeader()
 );

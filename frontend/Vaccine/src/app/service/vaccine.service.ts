@@ -1,40 +1,43 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-const API_URL = 'http://localhost:5101/api/vaccines';
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class VaccineService {
+  private apiUrl = 'http://localhost:5101/api/vaccines'; // URL API Backend
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  getVaccines(): Observable<any> {
-    return this.http.get(`${API_URL}`);
+  private getHeaders(): HttpHeaders {
+    const token = localStorage.getItem('token'); // Lấy token từ LocalStorage
+    if (!token) {
+      throw new Error('Không có quyền truy cập!');
+    }
+
+    return new HttpHeaders({
+      Authorization: `Bearer ${token}`, // Đính kèm token vào header
+    });
   }
 
-  getVaccineById(id: number): Observable<any> {
-    return this.http.get(`${API_URL}/${id}`);
+  getVaccines(): Observable<any[]> {
+    return this.http.get<any[]>(this.apiUrl, { headers: this.getHeaders() });
   }
 
   addVaccine(vaccine: any): Observable<any> {
-    return this.http.post(API_URL, vaccine);
+    return this.http.post(this.apiUrl, vaccine, { headers: this.getHeaders() });
   }
 
   updateVaccine(id: number, vaccine: any): Observable<any> {
-    return this.http.put(`${API_URL}/${id}`, vaccine);
+    return this.http.put(`${this.apiUrl}/${id}`, vaccine, { headers: this.getHeaders() });
   }
 
   deleteVaccine(id: number): Observable<any> {
-    return this.http.delete(`${API_URL}/${id}`);
+    return this.http.delete(`${this.apiUrl}/${id}`, {
+      headers: this.getHeaders(),
+      responseType: 'text', // Chấp nhận phản hồi dạng chuỗi
+    });
   }
-
-  addVaccineDetail(id: number, detail: any): Observable<any> {
-    return this.http.post(`${API_URL}/${id}/details`, detail);
-  }
-
-  deleteVaccineDetail(id: number, detailId: number): Observable<any> {
-    return this.http.delete(`${API_URL}/${id}/details/${detailId}`);
-  }
+  
 }

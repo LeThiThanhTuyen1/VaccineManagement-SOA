@@ -24,7 +24,7 @@ export class UserListComponent implements OnInit {
       },
       error: (err) => {
         console.error(err);
-        this.errorMessage = 'Không có quyêền truy cập!';
+        this.errorMessage = 'Không có quyền truy cập!';
       },
     });
   }

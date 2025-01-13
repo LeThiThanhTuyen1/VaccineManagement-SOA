@@ -9,12 +9,14 @@ import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/
 import { FormsModule } from '@angular/forms';
 import { UserListComponent } from './component/user-list/user-list.component';
 import { RouterModule } from '@angular/router';
+import { VaccineManagementComponent } from './component/vaccine-management/vaccine-management.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    UserListComponent
+    UserListComponent,
+    VaccineManagementComponent
 
   ],
 
