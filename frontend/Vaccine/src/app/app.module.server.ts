@@ -7,9 +7,9 @@ import { NgModule } from '@angular/core';
 // Angular SSR doesn't require `provideServerRoutesConfig` in most setups
 @NgModule({
   imports: [
-    AppModule,       // Import your main application module
-    ServerModule     // Enable server-side rendering support
+    AppModule,       
+    ServerModule     
   ],
-  bootstrap: [AppComponent] // Bootstraps your root component
+  bootstrap: [AppComponent] 
 })
 export class AppServerModule { }

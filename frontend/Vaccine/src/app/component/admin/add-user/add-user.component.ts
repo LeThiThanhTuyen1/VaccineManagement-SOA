@@ -7,11 +7,14 @@ import { Router } from '@angular/router';
   standalone: false,
   
   templateUrl: './add-user.component.html',
-  styleUrl: './add-user.component.css'
+  styleUrls: ['./add-user.component.css']
 })
 export class AddUserComponent {
-  newUser: any;
+  newUser: any = {};
   errorMessage: string | null = null;
+  username: string = '';
+  password: string = '';
+  role: string = '';
 
   constructor(private userService: UserService, private router: Router) {}
 

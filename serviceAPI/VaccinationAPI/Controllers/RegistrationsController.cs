@@ -85,6 +85,7 @@ namespace VaccinationAPI.Controllers
                     registration.CitizenId,
                     VaccineName = vaccine?.Name,
                     registration.VaccineId,
+                    registration.Location,
                     registration.RegistrationDate,
                     registration.Status
                 };
@@ -113,7 +114,7 @@ namespace VaccinationAPI.Controllers
             if (vaccine == null)
                 return BadRequest("Vaccine không tồn tại.");
 
-            registration.RegistrationDate = DateTime.UtcNow;
+
             registration.Status = "Pending";
 
             _context.Registrations.Add(registration);
@@ -144,6 +145,7 @@ namespace VaccinationAPI.Controllers
                 registration.CitizenId,
                 VaccineName = vaccine?.Name,
                 registration.VaccineId,
+                registration.Location,
                 registration.RegistrationDate,
                 registration.Status
             };
@@ -179,6 +181,7 @@ namespace VaccinationAPI.Controllers
                 r.Id,
                 r.CitizenId,
                 r.VaccineId,
+                r.Location,
                 r.RegistrationDate,
                 r.Status
             });
