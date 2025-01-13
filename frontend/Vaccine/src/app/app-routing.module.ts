@@ -5,6 +5,7 @@ import { UserListComponent } from './component/admin/user-list/user-list.compone
 import { HomeManagerComponent } from './component/home-manager/home-manager.component';
 import { AdminHomeComponent } from './component/admin/admin-home/admin-home.component';
 import { AddUserComponent } from './component/admin/add-user/add-user.component';
+import { RegistrationComponent } from './component/manager/registration/registration.component';
 
 
 
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'user-list', component: UserListComponent },
   { path: 'home-admin', component: AdminHomeComponent},
   { path: 'add-user', component: AddUserComponent},
+  { path: 'registration', component: RegistrationComponent},
   { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];
 

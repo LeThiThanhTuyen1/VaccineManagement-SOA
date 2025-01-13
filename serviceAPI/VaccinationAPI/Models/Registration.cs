@@ -17,6 +17,9 @@ namespace VaccinationAPI.Models
         [Column("vaccine_id")]
         public long VaccineId { get; set; }
 
+        [Column("location")]
+        public String? Location { get; set; }
+
         [Column("registration_date")]
         public DateTime RegistrationDate { get; set; }
 

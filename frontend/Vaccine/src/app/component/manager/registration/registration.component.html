@@ -1,0 +1,57 @@
+<div class="container">
+    <h2>Đăng Ký Lịch Tiêm</h2>
+  
+    <!-- Error and success messages -->
+    <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+    <div *ngIf="successMessage" class="alert alert-success">{{ successMessage }}</div>
+  
+    <!-- Form for vaccination registration -->
+    <form (ngSubmit)="onSubmit(vaccinationForm)" #vaccinationForm="ngForm">
+  
+      <!-- Citizen select dropdown -->
+      <div class="form-group">
+        <label for="citizenId">Công Dân:</label>
+        <select [(ngModel)]="vaccination.citizenId" name="citizenId" required class="form-control">
+          <!-- Option when no citizen is selected -->
+          <option value="" disabled selected>- Chọn Công Dân -</option>
+          <!-- List citizens -->
+          <option *ngFor="let citizen of citizens" [value]="citizen.id">{{ citizen.fullName }}</option>
+          <!-- Option when no data is available -->
+          <option *ngIf="citizens.length === 0" disabled>Không có dữ liệu công dân</option>
+        </select>
+      </div>
+  
+      <!-- Vaccine select dropdown -->
+      <div class="form-group">
+        <label for="vaccineId">Vaccine:</label>
+        <select [(ngModel)]="vaccination.vaccineId" name="vaccineId" required class="form-control">
+          <!-- Option when no vaccine is selected -->
+          <option value="" disabled selected>- Chọn Vaccine -</option>
+          <!-- List vaccines -->
+          <option *ngFor="let vaccine of vaccines" [value]="vaccine.id">{{ vaccine.name }} - {{ vaccine.description }}</option>
+          <!-- Option when no data is available -->
+          <option *ngIf="vaccines.length === 0" disabled>Không có dữ liệu vaccine</option>
+        </select>
+      </div>
+  
+      <!-- Registration Date input -->
+      <div class="form-group">
+        <label for="registrationDate">Ngày Đăng Ký:</label>
+        <input type="date" [(ngModel)]="vaccination.registrationDate" name="registrationDate" required class="form-control" />
+      </div>
+  
+      <!-- Location input -->
+    <div class="form-group">
+        <select [(ngModel)]="vaccination.location" name="location" required class="form-control">
+            <option value="" disabled selected>- Chọn Địa điểm -</option>
+            <option *ngFor="let location of locations" [value]="location.value">{{ location.name }}</option>
+        </select>
+    </div>  
+        
+      <!-- Submit button -->
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Đăng Ký Tiêm</button>
+      </div>
+    </form>
+  </div>
+  
