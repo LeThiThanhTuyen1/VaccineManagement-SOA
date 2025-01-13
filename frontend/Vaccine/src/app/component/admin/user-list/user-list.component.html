@@ -1,4 +1,9 @@
-  <div class="container">
+<div *ngIf="isLoading" class="loading">
+  <p>Đang tải dữ liệu, vui lòng chờ...</p>
+  <div class="spinner"></div> 
+</div>
+
+  <div  *ngIf="!isLoading" class="container">
     <h2>Danh sách Tài Khoản</h2>
 
     <div>
@@ -38,4 +43,3 @@
       </tbody>
     </table>
   </div>
-  
