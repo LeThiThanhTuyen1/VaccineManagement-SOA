@@ -115,7 +115,7 @@ namespace VaccinationAPI.Controllers
                 return BadRequest("Vaccine không tồn tại.");
 
 
-            registration.Status = "Pending";
+            registration.Status = "PENDING";
 
             _context.Registrations.Add(registration);
             await _context.SaveChangesAsync();

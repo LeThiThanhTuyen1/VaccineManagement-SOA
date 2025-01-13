@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { UserService } from '../../../service/user.service';
 import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-add-user',
@@ -19,8 +20,8 @@ export class AddUserComponent {
   constructor(private userService: UserService, private router: Router) {}
 
   // Method to register a new user
-  onSubmit(): void {
-    if (!this.newUser.username || !this.newUser.password || !this.newUser.role) {
+  onSubmit(addAccountForm: NgForm): void {
+    if (!addAccountForm.valid) {
       this.errorMessage = 'Vui lòng điền đầy đủ thông tin tài khoản!';
       return;
     }
@@ -28,7 +29,7 @@ export class AddUserComponent {
     this.userService.register(this.newUser).subscribe({
       next: (data) => {
         alert('Tạo tài khoản thành công!');
-        this.router.navigate(['/user-list']);
+        addAccountForm.reset
       },
       error: (err) => {
         this.errorMessage = err.error || 'Có lỗi xảy ra. Vui lòng thử lại.';

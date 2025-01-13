@@ -3,7 +3,7 @@
     <div *ngIf="errorMessage" class="error" style="color: red;">
         <p>{{ errorMessage }}</p>
     </div>
-    <form (ngSubmit)="onSubmit()" #addAccountForm="ngForm">
+    <form (ngSubmit)="onSubmit(addAccountForm)" #addAccountForm="ngForm">
         <div class="form-group">
             <label for="username">Tên tài khoản:</label>
             <input placeholder="Nhập tên tài khoản" type="text" id="username" [(ngModel)]="newUser.username" name="username" required />
@@ -17,6 +17,7 @@
         <div class="form-group">
             <label for="role">Vai trò:</label>
             <select id="role" [(ngModel)]="newUser.role" name="role" required>
+                <option value="" disabled selected>- Chọn Vai trò -</option>
                 <option value="ADMIN">ADMIN</option>
                 <option value="MANAGER">MANAGER</option>
             </select>
