@@ -76,21 +76,34 @@ public class UsersController : ControllerBase
     }
 
     // POST: api/Users/register
+    // POST: api/Users/register
     [HttpPost("register")]
     [Authorize(Roles = "ADMIN")]
     public IActionResult Register([FromBody] User user)
     {
-        if (_context.Users.Any(u => u.Username == user.Username))
+        try
         {
-            return BadRequest("Tên đăng nhập đã tồn tại.");
+            // Check if the username already exists
+            if (_context.Users.Any(u => u.Username == user.Username))
+            {
+                return BadRequest(new { message = "Tên đăng nhập đã tồn tại." });
+            }
+
+            // Hash the password and set other user properties
+            user.Password = HashPassword(user.Password);
+            user.Enabled = false;
+
+            // Add and save the user
+            _context.Users.Add(user);
+            _context.SaveChanges();
+
+            // Return success message
+            return Ok(new { message = "Đăng ký tài khoản thành công. Vui lòng liên hệ quản trị viên để kích hoạt tài khoản." });
         }
-
-        user.Password = HashPassword(user.Password);
-        user.Enabled = false;
-        _context.Users.Add(user);
-        _context.SaveChanges();
-
-        return Ok("Đăng ký tài khoản thành công. Vui lòng liên hệ quản trị viên để kích hoạt tài khoản.");
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { message = "Có lỗi xảy ra. Vui lòng thử lại sau.", error = ex.Message });
+        }
     }
 
     // PUT: api/Users/activate/5
