@@ -61,14 +61,17 @@ export class EditManagementComponent implements OnInit {
     this.citizensService.getCitizenById(id).subscribe(
       (citizen) => {
         if (citizen) {
-          this.editingCitizen = { ...citizen }; // Ensure we have all citizen data
+          // Gán thông tin của công dân cho đối tượng editingCitizen
+          this.editingCitizen = { ...citizen }; 
           this.editingCitizen.dateOfBirth = this.formatDate(this.editingCitizen.dateOfBirth);
+          
+          // Đảm bảo có wardId, provinceId, và districtId chính xác
+          console.log('Citizen Province ID:', this.editingCitizen.provinceId);
+          console.log('Citizen District ID:', this.editingCitizen.districtId);
+          console.log('Citizen Ward ID:', this.editingCitizen.wardId);
   
-          // Check if the wardId is valid and assign it correctly
-          console.log('Citizen Ward ID:', citizen.wardId); // Log the wardId from citizen data
-  
-          this.onProvinceChange(); // Fetch districts
-          this.onDistrictChange(); // Fetch wards
+          // Tải các quận/huyện theo tỉnh của công dân
+          this.onProvinceChange();
         }
       },
       (error) => {
@@ -90,39 +93,36 @@ formatDate(date: string): string {
 
 
   // Fetch districts based on selected province
-onProvinceChange(): void {
-  const selectedProvinceId = this.editingCitizen.provinceId;
-  if (selectedProvinceId) {
-    // Tải danh sách quận theo tỉnh
-    this.districtService.getDistrictsByProvince(selectedProvinceId).subscribe((data) => {
-      this.districts = data;
-
-      // Sau khi chọn tỉnh, reset các giá trị của district và ward
-      this.editingCitizen.districtId = this.editingCitizen.districtId || 0; // Nếu không có giá trị districtId, gán mặc định
-      this.editingCitizen.wardId = 0; // Reset wardId về 0 khi tỉnh thay đổi
-      this.wards = []; // Clear wards khi thay đổi tỉnh
-    });
+  onProvinceChange(): void {
+    const selectedProvinceId = this.editingCitizen.provinceId;
+    if (selectedProvinceId) {
+      this.districtService.getDistrictsByProvince(selectedProvinceId).subscribe((districts) => {
+        this.districts = districts;
+  
+        // Đảm bảo districtId tồn tại, nếu không có thì đặt giá trị mặc định
+        this.editingCitizen.districtId = this.editingCitizen.districtId || 0;
+  
+        // Sau khi tải danh sách quận/huyện, gọi hàm để tải xã/phường
+        this.onDistrictChange();
+      });
+    }
   }
-}
-
-// Fetch wards based on selected district
-onDistrictChange(): void {
-  const selectedDistrictId = this.editingCitizen.districtId;
-  if (selectedDistrictId) {
-    // Tải danh sách xã theo quận
-    this.wardService.getWardsByDistrict(selectedDistrictId).subscribe((data) => {
-      // After wards are fetched
-this.wards = data;
-console.log('Wards:', this.wards); // Check the wards array
-console.log('Selected Ward ID:', this.editingCitizen.wardId); // Check the selected ward ID
-
-      console.log('Wards:', this.wards); // Debugging line
-
-      // Trigger change detection manually
-      this.cdRef.detectChanges();
-    });
+  
+  onDistrictChange(): void {
+    const selectedDistrictId = this.editingCitizen.districtId;
+    if (selectedDistrictId) {
+      this.wardService.getWardsByDistrict(selectedDistrictId).subscribe((wards) => {
+        this.wards = wards;
+  
+        // Đảm bảo wardId tồn tại, nếu không có thì đặt giá trị mặc định
+        this.editingCitizen.wardId = this.editingCitizen.wardId || 0;
+  
+        // Thực hiện change detection để cập nhật view
+        this.cdRef.detectChanges();
+      });
+    }
   }
-}
+  
 trackByWardId(index: number, ward: any): number {
   return ward.id; // Return the ward ID as the unique identifier
 }
