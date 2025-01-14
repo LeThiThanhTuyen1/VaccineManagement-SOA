@@ -12,6 +12,7 @@ export class UserListComponent implements OnInit {
   users: any[] = [];
   username: string = '';
   errorMessage: string = '';
+  isLoading: boolean = true;
 
   constructor(private userService: UserService, private router: Router) { }
   ngOnInit(): void {
@@ -22,9 +23,11 @@ export class UserListComponent implements OnInit {
     this.userService.getUsers().subscribe({
       next: (data) => {
         this.users = data;
+        this.isLoading = false;
       },
       error: (err) => {
         alert('Không có quyền truy cập!');
+        this.isLoading = false;
         this.router.navigate(['/login']);
       },
     });
