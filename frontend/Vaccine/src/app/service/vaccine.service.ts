@@ -1,6 +1,8 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { catchError, Observable, throwError } from 'rxjs';
+import { AuthService } from './auth.service';
+import { Vaccine } from '../model/vaccine';
 
 @Injectable({
   providedIn: 'root'
@@ -8,41 +10,73 @@ import { Observable } from 'rxjs';
 export class VaccineService {
   private API_URL = 'http://localhost:5101/api/vaccines';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  // getVaccines(): Observable<any> {
-  //   return this.http.get(`${API_URL}`);
-  // }
-
-  // Fetch the list of vaccines
-  getVaccines(token: string): Observable<any> {
-    const headers = new HttpHeaders({
-      'Authorization': `Bearer ${token}`
-    });
-    return this.http.get(this.API_URL, { headers });
+  // Lấy danh sách vaccine
+  getVaccines(): Observable<any> {
+    return this.http.get(`${this.API_URL}`).pipe(catchError(this.handleError));
   }
 
-  // getVaccineById(id: number): Observable<any> {
-  //   return this.http.get(`${API_URL}/${id}`);
-  // }
+  // Lấy chi tiết vaccine theo ID
+  getVaccineById(id: number): Observable<any> {
+    return this.http.get(`${this.API_URL}/${id}`);
+  }
 
-  // addVaccine(vaccine: any): Observable<any> {
-  //   return this.http.post(API_URL, vaccine);
-  // }
+  // Thêm mới vaccine
+  addVaccine(vaccine: any): Observable<any> {
+    return this.http.post(`${this.API_URL}`, vaccine);
+  }
 
-  // updateVaccine(id: number, vaccine: any): Observable<any> {
-  //   return this.http.put(`${API_URL}/${id}`, vaccine);
-  // }
+  // Cập nhật vaccine theo ID
+  updateVaccine(vaccine: Vaccine): Observable<any> {
+    const { details, ...vaccineData } = vaccine;
 
-  // deleteVaccine(id: number): Observable<any> {
-  //   return this.http.delete(`${API_URL}/${id}`);
-  // }
+    const requestData = {
+      ...vaccineData,
+      details: details.map((detail) => ({
+        ...detail,
+        vaccine_id: vaccine.id,
+      })),
+    };
 
-  // addVaccineDetail(id: number, detail: any): Observable<any> {
-  //   return this.http.post(`${API_URL}/${id}/details`, detail);
-  // }
+    return this.http.put(`${this.API_URL}/${vaccine.id}`, requestData).pipe(
+      catchError(this.handleError)
+    );
+  }
+  // Xóa vaccine theo ID
+  deleteVaccine(id: number): Observable<any> {
+    return this.http.delete(`${this.API_URL}/${id}`);
+  }
 
-  // deleteVaccineDetail(id: number, detailId: number): Observable<any> {
-  //   return this.http.delete(`${API_URL}/${id}/details/${detailId}`);
-  // }
+  // Tìm kiếm vaccine theo tên
+  searchVaccines(name: string): Observable<any> {
+    return this.http.get(`${this.API_URL}/search?name=${name}`);
+  }
+
+  // Xử lý lỗi
+  private handleError(error: any) {
+    const errorMessage = this.getErrorMessage(error);
+    return throwError(() => new Error(errorMessage));
+  }
+
+  private getErrorMessage(error: any): string {
+    if (error.error instanceof ErrorEvent) {
+      // Client-side errors
+      return `Client Error: ${error.error.message}`;
+    } else {
+      // Server-side errors
+      switch (error.status) {
+        case 400:
+          return 'Bad Request: The request is invalid.';
+        case 401:
+          return 'Unauthorized: Please login.';
+        case 403:
+          return 'Forbidden: You do not have permission to perform this action.';
+        case 500:
+          return 'Internal Server Error: Please try again later.';
+        default:
+          return `Error Code: ${error.status}\nMessage: ${error.message}`;
+      }
+    }
+  }
 }

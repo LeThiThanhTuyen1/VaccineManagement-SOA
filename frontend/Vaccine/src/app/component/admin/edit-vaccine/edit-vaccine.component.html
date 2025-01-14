@@ -1,0 +1,68 @@
+<div *ngIf="vaccine; else errorTemplate" class="edit-vaccine-container">
+    <h2 class="vaccine-title">Chỉnh sửa Vaccine: {{ vaccine.name }}</h2>
+  
+    <form (ngSubmit)="updateVaccine()" #vaccineForm="ngForm" class="edit-form">
+      <div class="form-group">
+        <label for="name">Tên Vaccine:</label>
+        <input type="text" id="name" [(ngModel)]="vaccine.name" name="name" required class="form-control"/>
+      </div>
+
+      <div class="form-group">
+        <label for="manufacturer">Nhà sản xuất:</label>
+        <input
+          type="text"
+          id="manufacturer"
+          [(ngModel)]="vaccine.manufacturer"
+          name="manufacturer"
+          class="form-control"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="expirationDate">Hạn sử dụng:</label>
+        <input
+          type="date"
+          id="expirationDate"
+          [(ngModel)]="vaccine.expirationDate"
+          name="expirationDate"
+          class="form-control"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="quantity">Số lượng:</label>
+        <input
+          type="number"
+          id="quantity"
+          [(ngModel)]="vaccine.quantity"
+          name="quantity"
+          class="form-control"
+          min="0"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="description">Mô tả:</label>
+        <textarea
+          id="description"
+          [(ngModel)]="vaccine.description"
+          name="description"
+          class="form-control"
+        ></textarea>
+      </div>
+  
+      <button type="submit" [disabled]="!vaccineForm.valid" class="btn btn-primary">
+        Lưu thay đổi
+      </button>
+      <button type="button" (click)="cancelEdit()" class="btn btn-secondary">
+        Hủy
+      </button>
+    </form>
+  </div>
+  
+  <ng-template #errorTemplate>
+    <div class="error-message">
+      <p>{{ errorMessage }}</p>
+    </div>
+  </ng-template>
+  

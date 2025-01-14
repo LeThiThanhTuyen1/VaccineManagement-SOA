@@ -1,0 +1,46 @@
+<div *ngIf="isLoading" class="loading">
+    <p>Đang tải dữ liệu, vui lòng chờ...</p>
+    <div class="spinner"></div> 
+  </div>
+  
+    <div  *ngIf="!isLoading" class="container">  
+      <form (submit)="searchVaccines()">
+          <input type="text" [(ngModel)]="searchTerm" name="searchTerm" placeholder="Nhập tên vaccine để tìm kiếm..." />
+          <button type="submit">Tìm kiếm</button>
+      </form>      
+      
+      <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+      <h2>Danh Sách Vaccine</h2>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Tên Vaccine</th>
+            <th>Nhà sản xuất</th>
+            <th>Hạn sử dụng</th>
+            <th>Số lượng</th>
+            <th>Mô tả</th>
+            <th>
+              <div>
+                <button routerLink="/add-vaccine" class="btn btn-primary">Thêm Vaccine</button>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let vaccine of vaccines">
+            <td>{{ vaccine.name }}</td>
+            <td>{{ vaccine.manufacturer }}</td>
+            <td>{{ vaccine.expirationDate}}</td>
+            <td>{{ vaccine.quantity }}</td>
+            <td>{{ vaccine.description}}</td>
+            <td>
+              <button (click)="viewDetails(vaccine.id)" class=" btn btn-view">Chi tiết</button>
+              <button (click)="editVaccine(vaccine.id)" class=" btn btn-edit">Sửa</button>
+              <button (click)="deleteVaccine(vaccine.id)" class=" btn btn-delete">Xóa</button>
+              
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>

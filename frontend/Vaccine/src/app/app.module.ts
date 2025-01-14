@@ -16,6 +16,10 @@ import { AddUserComponent } from './component/admin/add-user/add-user.component'
 import { RegistrationComponent } from './component/manager/registration/registration.component';
 import { RegistrationListComponent } from './component/manager/registration-list/registration-list.component';
 import { TokenInterceptor } from './service/token-interceptor.service';
+import { VaccineListComponent } from './component/admin/vaccine-list/vaccine-list.component';
+import { VaccineDetailsComponent } from './component/admin/vaccine-details/vaccine-details.component';
+import { AddVaccineComponent } from './component/admin/add-vaccine/add-vaccine.component';
+import { EditVaccineComponent } from './component/admin/edit-vaccine/edit-vaccine.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { TokenInterceptor } from './service/token-interceptor.service';
     AdminHomeComponent,
     AddUserComponent,
     RegistrationComponent,
-    RegistrationListComponent
+    RegistrationListComponent,
+    VaccineListComponent,
+    VaccineDetailsComponent,
+    AddVaccineComponent,
+    EditVaccineComponent
   ],
 
   imports: [

@@ -26,7 +26,7 @@ namespace VaccineAPI.Models
         [Column("description")]
         public string? Description { get; set; }
 
-        [JsonIgnore]
-        public ICollection<VaccineDetail>? VaccineDetails { get; set; }
+        public ICollection<VaccineDetail> VaccineDetails { get; set; } = new List<VaccineDetail>();
+
     }
 }
