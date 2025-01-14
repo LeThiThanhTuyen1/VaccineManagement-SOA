@@ -1,0 +1,59 @@
+<div class="header">
+    <!-- Include header content -->
+  </div>
+  <h2>Danh sách công dân</h2>
+  <div>
+    <button routerLink="/add-management" class="btn-primary">Thêm công dân</button>
+</div>
+  <div *ngIf="message" class="alert alert-success">
+    <p>{{ message }}</p>
+  </div>
+  
+  <form (submit)="onGroupChange(); $event.preventDefault()">
+    <label for="group"> Đối tượng:</label>
+    <select id="group" [(ngModel)]="selectedGroup" name="group">
+      <option value="">--- Chọn nhóm ---</option>
+      <option *ngFor="let groupOption of targetGroups" [value]="groupOption.name">
+        {{ groupOption.displayName }}
+      </option>
+    </select>
+    <button type="submit">Tìm kiếm</button>
+  </form>
+  
+  <!-- No data message -->
+  <div *ngIf="noDataMessage" class="alert alert-warning">
+    <p>{{ noDataMessage }}</p>
+  </div>
+  
+  <!-- Add Citizen Button -->
+  <!-- <button (click)="addCitizen()">Thêm công dân</button> -->
+  
+  <!-- <h2>Danh sách công dân</h2> -->
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Họ và tên</th>
+        <th>Ngày sinh</th>
+        <th>Số điện thoại</th>
+        <th>Địa chỉ</th>
+        <th>Nhóm đối tượng</th>
+        <th>Hành động</th> <!-- Action column for edit/delete -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let citizen of citizens">
+        <td>{{ citizen.fullName }}</td>
+        <td>{{ citizen.dateOfBirth }}</td>
+        <td>{{ citizen.phoneNumber }}</td>
+        <td>{{ citizen.fullAddress }}</td>
+        <td>{{ citizen.targetGroup }}</td>
+        <td>
+          <!-- Edit/Delete Actions -->
+          <button (click)="editCitizen(citizen.id)" routerLink="/edit-management">Sửa</button>
+          <button (click)="deleteCitizen(citizen.id)">Xóa</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+ 

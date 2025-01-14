@@ -37,6 +37,7 @@ namespace CitizenAPI.Controllers
                 citizen.FullName,
                 citizen.DateOfBirth,
                 citizen.PhoneNumber,
+                citizen.TargetGroup,
                 FullAddress = $"{citizen.AddressDetail}, {citizen.Ward.Name}, {citizen.Ward.District.Name}, {citizen.Ward.District.Province.Name}"
             }).ToList();
 
@@ -48,9 +49,9 @@ namespace CitizenAPI.Controllers
         public async Task<ActionResult<Citizen>> GetCitizen(long id)
         {
             var citizen = await _context.Citizens
-                .Include(c => c.Ward) 
-                .ThenInclude(w => w.District) 
-                .ThenInclude(d => d.Province) 
+                .Include(c => c.Ward)
+                    .ThenInclude(w => w.District)
+                        .ThenInclude(d => d.Province)
                 .FirstOrDefaultAsync(c => c.Id == id);
 
             if (citizen == null)
@@ -58,13 +59,20 @@ namespace CitizenAPI.Controllers
                 return NotFound();
             }
 
-            // Tạo địa chỉ đầy đủ
+            // Tạo địa chỉ đầy đủ và mã các đơn vị hành chính
             var citizenWithFullAddress = new
             {
                 citizen.Id,
                 citizen.FullName,
                 citizen.DateOfBirth,
                 citizen.PhoneNumber,
+                citizen.AddressDetail,
+                WardId = citizen.Ward.Id, // Mã xã/phường
+                WardName = citizen.Ward.Name, // Tên xã/phường
+                DistrictId = citizen.Ward.District.Id, // Mã huyện
+                DistrictName = citizen.Ward.District.Name, // Tên huyện
+                ProvinceId = citizen.Ward.District.Province.Id, // Mã tỉnh
+                ProvinceName = citizen.Ward.District.Province.Name, // Tên tỉnh
                 FullAddress = $"{citizen.AddressDetail}, {citizen.Ward.Name}, {citizen.Ward.District.Name}, {citizen.Ward.District.Province.Name}"
             };
 
