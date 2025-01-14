@@ -153,42 +153,6 @@ namespace VaccinationAPI.Controllers
             return Ok(result);
         }
 
-        // GET: api/registrations/filter
-        [HttpGet("filter")]
-        public async Task<ActionResult<IEnumerable<object>>> FilterRegistrations([FromQuery] string? status, [FromQuery] DateTime? fromDate, [FromQuery] DateTime? toDate, [FromQuery] long? citizenId)
-        {
-            var query = _context.Registrations.AsQueryable();
-
-            if (!string.IsNullOrEmpty(status))
-                query = query.Where(r => r.Status == status);
-
-            if (fromDate.HasValue)
-                query = query.Where(r => r.RegistrationDate >= fromDate.Value);
-
-            if (toDate.HasValue)
-                query = query.Where(r => r.RegistrationDate <= toDate.Value);
-
-            if (citizenId.HasValue)
-                query = query.Where(r => r.CitizenId == citizenId.Value);
-
-            var registrations = await query.ToListAsync();
-
-            if (!registrations.Any())
-                return NotFound("Không tìm thấy đăng ký nào phù hợp.");
-
-            var results = registrations.Select(r => new
-            {
-                r.Id,
-                r.CitizenId,
-                r.VaccineId,
-                r.Location,
-                r.RegistrationDate,
-                r.Status
-            });
-
-            return Ok(results);
-        }
-
         // POST: api/registrations/{id}/complete
         [HttpPost("{id}/complete")]
         public async Task<IActionResult> CompleteVaccination(long id)
