@@ -11,6 +11,9 @@ import { VaccineListComponent } from './component/admin/vaccine-list/vaccine-lis
 import { AddVaccineComponent } from './component/admin/add-vaccine/add-vaccine.component';
 import { VaccineDetailsComponent } from './component/admin/vaccine-details/vaccine-details.component';
 import { EditVaccineComponent } from './component/admin/edit-vaccine/edit-vaccine.component';
+import { ManagementComponent } from './component/manager/management/management.component';
+import { AddManagementComponent } from './component/manager/add-management/add-management.component';
+import { EditManagementComponent } from './component/manager/edit-management/edit-management.component';
 
 
 const routes: Routes = [
@@ -26,6 +29,10 @@ const routes: Routes = [
   { path: 'edit-vaccine/:id', component: EditVaccineComponent },
   { path: 'add-vaccine', component: AddVaccineComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path : 'management', component :ManagementComponent },
+  { path : 'add-management' , component : AddManagementComponent},
+  { path: 'edit-management/:id', component: EditManagementComponent },
+   { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];
 
 @NgModule({
