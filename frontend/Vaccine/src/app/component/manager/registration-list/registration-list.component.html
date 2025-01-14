@@ -1,64 +1,65 @@
 <div class="container">
-    <h2>Danh Sách Đăng Ký Tiêm Chủng</h2>
-  
-    <!-- Hiển thị lỗi nếu có -->
-    <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
-    
-    <!-- Hiển thị loading -->
-    <div *ngIf="isLoading" class="loading">
-        <p>Đang tải dữ liệu, vui lòng chờ...</p>
-        <div class="spinner"></div> 
-    </div>
-  
-    <!-- Bộ lọc -->
-    <div *ngIf="!isLoading && registrations.length > 0" class="filter-section">
-        <div>
-            <button routerLink="/registration" class="btn btn-primary">Thêm đăng ký </button>
-        </div>
-
-        <div class="form-group">
-            <label for="filterDate">Lọc theo ngày đăng ký:</label>
-            <input type="date" [(ngModel)]="filterDate" (change)="applyFilters()" class="form-control">
-        </div>
-
-        <div class="form-group">
-            <label for="filterLocation">Lọc theo địa điểm:</label>
-            <select [(ngModel)]="filterLocation" (change)="applyFilters()" class="form-control">
-            <option value="">Tất cả địa điểm</option>
-            <option *ngFor="let location of locations" [value]="location.value">{{ location.name }}</option>
-            </select>
-        </div>
-
-        <button class="btn btn-primary" (click)="resetFilters()">Xóa Bộ Lọc</button>
-    </div>
-  
-    <!-- Hiển thị danh sách đăng ký -->
-    <table *ngIf="!isLoading && filteredRegistrations.length > 0" class="table table-bordered">
-      <thead>
-        <tr>
-          <th>Mã Đăng Ký</th>
-          <th>Tên Công Dân</th>
-          <th>Vaccine</th>
-          <th>Địa Điểm</th>
-          <th>Ngày Đăng Ký</th>
-          <th>Trạng Thái</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let registration of filteredRegistrations">
-          <td>{{ registration.id }}</td>
-          <td>{{ registration.citizenName }}</td>
-          <td>{{ registration.vaccineName }}</td>
-          <td>{{ registration.location }}</td>
-          <td>{{ registration.registrationDate | date:'dd/MM/yyyy' }}</td>
-          <td>{{ registration.status }}</td>
-        </tr>
-      </tbody>
-    </table>
-  
-    <!-- Thông báo nếu không có kết quả -->
-    <div *ngIf="!isLoading && filteredRegistrations.length === 0">
-      <p>Không tìm thấy đăng ký phù hợp.</p>
-    </div>
+  <h2>Danh Sách Đăng Ký Tiêm Chủng</h2>
+ 
+  <!-- Hiển thị loading -->
+  <div *ngIf="isLoading" class="loading">
+      <p>Đang tải dữ liệu, vui lòng chờ...</p>
+      <div class="spinner"></div> 
   </div>
-  
+
+  <!-- Bộ lọc -->
+  <div *ngIf="!isLoading && registrations.length > 0" class="filter-section">
+      <div>
+          <button routerLink="/registration" class="btn btn-primary">Thêm đăng ký</button>
+      </div>
+
+      <div class="form-group">
+          <label for="filterDate">Lọc theo ngày đăng ký:</label>
+          <input type="date" [(ngModel)]="filterDate" (change)="applyFilters()" class="form-control">
+      </div>
+
+      <div class="form-group">
+          <label for="filterLocation">Lọc theo địa điểm:</label>
+          <select [(ngModel)]="filterLocation" (change)="applyFilters()" class="form-control">
+          <option value="">Tất cả địa điểm</option>
+          <option *ngFor="let location of locations" [value]="location.value">{{ location.name }}</option>
+          </select>
+      </div>
+
+      <button class="btn btn-primary" (click)="resetFilters()">Xóa Bộ Lọc</button>
+  </div>
+
+  <!-- Hiển thị danh sách đăng ký -->
+  <table *ngIf="!isLoading && filteredRegistrations.length > 0" class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Mã Đăng Ký</th>
+        <th>Tên Công Dân</th>
+        <th>Vaccine</th>
+        <th>Địa Điểm</th>
+        <th>Ngày Đăng Ký</th>
+        <th>Trạng Thái</th>
+        <th>Hành Động</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let registration of filteredRegistrations">
+        <td>{{ registration.id }}</td>
+        <td>{{ registration.citizenName }}</td>
+        <td>{{ registration.vaccineName }}</td>
+        <td>{{ registration.location }}</td>
+        <td>{{ registration.registrationDate | date:'dd/MM/yyyy' }}</td>
+        <td>{{ registration.status }}</td>
+        <td>
+          <button *ngIf="registration.status === 'PENDING'" class="btn btn-success" (click)="completeRegistration(registration.id)">Đã Tiêm</button>
+          <button *ngIf="registration.status === 'PENDING'" class="btn btn-danger" (click)="cancelRegistration(registration.id)">Hủy</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Thông báo nếu không có kết quả -->
+  <div *ngIf="!isLoading && filteredRegistrations.length === 0">
+    <p>Không tìm thấy đăng ký phù hợp.</p>
+  </div>
+</div>

@@ -15,68 +15,81 @@ export class UserListComponent implements OnInit {
   isLoading: boolean = true;
 
   constructor(private userService: UserService, private router: Router) { }
+
   ngOnInit(): void {
     this.loadUsers();
   }
 
   loadUsers(): void {
+    this.isLoading = true;
     this.userService.getUsers().subscribe({
       next: (data) => {
         this.users = data;
         this.isLoading = false;
       },
       error: (err) => {
-        alert('Không có quyền truy cập!');
-        this.isLoading = false;
+        this.handleError('Không có quyền truy cập!');
         this.router.navigate(['/login']);
       },
     });
   }
-  
+
   searchUsers(): void {
-    if(this.username == '') {
-      alert("Vui lòng nhập tên tìm kiếm");
+    if (!this.username.trim()) {
+      this.handleError("Vui lòng nhập tên tìm kiếm");
+      return;
     }
 
     this.errorMessage = '';
-    if (this.username.trim()) {
-      this.userService.searchUsers(this.username).subscribe({
-        next: (data) => {
-          this.users = data;
-        },
-        error: (err) => {
-          this.errorMessage = "Không tìm thấy tài khoản tương ứng!";
-        }
-      });
-    }
+    this.userService.searchUsers(this.username).subscribe({
+      next: (data) => {
+        this.users = data;
+      },
+      error: () => {
+        this.handleError("Không tìm thấy tài khoản tương ứng!");
+      }
+    });
   }
-  
+
   activateUser(userId: number): void {
     this.errorMessage = '';
     this.userService.activateUser(userId).subscribe(
       (response) => {
-        alert(response.message); 
-        this.loadUsers(); 
+        this.showSuccess(response.message); 
+        this.updateUserStatus(userId, true); 
       },
-      (error) => {
-        this.errorMessage = error;
-        alert('Không thể kích hoạt tài khoản.');
+      () => {
+        this.handleError('Không thể kích hoạt tài khoản.');
       }
     );
   }
-  
+
   deactivateUser(userId: number): void {
     this.errorMessage = '';
     this.userService.deactivateUser(userId).subscribe(
       (response) => {
-        alert(response.message); 
-        this.loadUsers(); 
+        this.showSuccess(response.message); 
+        this.updateUserStatus(userId, false);
       },
-      (error) => {
-        this.errorMessage = error;
-        alert('Không thể vô hiệu hóa tài khoản.');
+      () => {
+        this.handleError('Không thể vô hiệu hóa tài khoản.');
       }
     );
   }
-  
+
+  private handleError(message: string): void {
+    this.errorMessage = message;
+    alert(message); 
+  }
+
+  private showSuccess(message: string): void {
+    alert(message);
+  }
+
+  private updateUserStatus(userId: number, isActive: boolean): void {
+    const user = this.users.find(u => u.id === userId);
+    if (user) {
+      user.isActive = isActive;
+    }
+  }
 }

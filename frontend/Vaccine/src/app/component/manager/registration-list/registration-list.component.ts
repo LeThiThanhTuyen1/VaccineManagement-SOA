@@ -1,19 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../../../service/auth.service';
 import { RegistrationService } from '../../../service/registration.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-registration-list',
   standalone: false,
-  
   templateUrl: './registration-list.component.html',
-  styleUrls: ['./registration-list.component.css']  // Đúng cú pháp
+  styleUrls: ['./registration-list.component.css']
 })
 export class RegistrationListComponent implements OnInit {
   registrations: any[] = [];
   filteredRegistrations: any[] = [];
   errorMessage: string = '';
-  token: string = '';
   isLoading: boolean = true;
 
   // Các biến bộ lọc
@@ -24,21 +22,19 @@ export class RegistrationListComponent implements OnInit {
     { name: 'Cơ sở 2 - Tây Sơn', value: 'Cơ sở 2 - Tây Sơn' }
   ];
 
-  constructor(private authService: AuthService, 
-              private registrationService: RegistrationService) { }
+  constructor(private registrationService: RegistrationService) {}
 
   ngOnInit(): void {
-    const token = this.authService.getToken();
-    if (!token) {
-      this.errorMessage = 'Bạn cần đăng nhập để tiếp tục!';
-      this.isLoading = false;
-      return;
-    }
+    this.loadRegistrations(); 
+  }
 
-    this.registrationService.getRegistrations(token).subscribe({
+  // Phương thức tải lại dữ liệu đăng ký từ API
+  loadRegistrations(): void {
+    this.isLoading = true;
+    this.registrationService.getRegistrations().subscribe({
       next: (data) => {
         this.registrations = data;
-        this.filteredRegistrations = data;  // Lưu dữ liệu ban đầu vào biến bộ lọc
+        this.filteredRegistrations = data;  
         this.isLoading = false;
       },
       error: (err) => {
@@ -51,12 +47,8 @@ export class RegistrationListComponent implements OnInit {
   // Hàm áp dụng bộ lọc
   applyFilters(): void {
     this.filteredRegistrations = this.registrations.filter(registration => {
-      // Kiểm tra ngày nếu có bộ lọc
       const matchesDate = !this.filterDate || this.formatDate(new Date(registration.registrationDate)) === this.filterDate;
-
-      // Kiểm tra địa điểm nếu có bộ lọc
       const matchesLocation = !this.filterLocation || registration.location === this.filterLocation;
-      
       return matchesDate && matchesLocation;
     });
   }
@@ -74,5 +66,45 @@ export class RegistrationListComponent implements OnInit {
     this.filterDate = '';
     this.filterLocation = '';
     this.filteredRegistrations = this.registrations; 
+  }
+
+  // Phương thức hoàn thành đăng ký
+  completeRegistration(registrationId: number): void {
+    this.handleRegistrationAction(
+      registrationId,
+      () => this.registrationService.completeVaccination(registrationId),
+      'Hoàn thành đăng ký thành công!',
+      'Không thể hoàn thành đăng ký. Vui lòng thử lại.'
+    );
+  }
+  
+  // Phương thức hủy đăng ký
+  cancelRegistration(registrationId: number): void {
+    this.handleRegistrationAction(
+      registrationId,
+      () => this.registrationService.cancelVaccination(registrationId),
+      'Hủy đăng ký thành công!',
+      'Không thể hủy đăng ký. Vui lòng thử lại.'
+    );
+  }
+
+  // Xử lý logic chung cho hoàn thành hoặc hủy đăng ký
+  private handleRegistrationAction(
+    registrationId: number,
+    action: () => Observable<any>,
+    successMessage: string,
+    errorMessage: string
+  ): void {
+    action().subscribe({
+      next: (response) => {
+        console.log(successMessage, response);
+        alert(response.message || successMessage);
+        this.loadRegistrations();  
+      },
+      error: (err) => {
+        console.error('Lỗi khi xử lý đăng ký:', err);
+        alert(err.error.message || errorMessage);
+      }
+    });
   }
 }

@@ -80,7 +80,6 @@ public class UsersController : ControllerBase
     }
 
     // POST: api/Users/register
-    // POST: api/Users/register
     [HttpPost("register")]
     [Authorize(Roles = "ADMIN")]
     public IActionResult Register([FromBody] User user)
