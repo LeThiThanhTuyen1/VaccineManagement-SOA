@@ -5,7 +5,7 @@
   
     <div  *ngIf="!isLoading" class="container">  
       <form (submit)="searchVaccines()">
-          <input type="text" [(ngModel)]="searchTerm" name="searchTerm" placeholder="Nhập tên vaccine để tìm kiếm..." />
+          <input type="text" [(ngModel)]="name" name="name" placeholder="Nhập tên vaccine để tìm kiếm..." />
           <button type="submit">Tìm kiếm</button>
       </form>      
       

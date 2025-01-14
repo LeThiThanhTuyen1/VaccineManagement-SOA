@@ -179,13 +179,13 @@ namespace VaccineAPI.Controllers
         {
             if (detailId != detail.DetailId)
             {
-                return BadRequest("ID chi tiết không khớp.");
+                return BadRequest(new { message = "ID không khớp." });
             }
 
             var existingDetail = await _context.VaccineDetails.FindAsync(detailId);
             if (existingDetail == null || existingDetail.VaccineId != id)
             {
-                return NotFound("Chi tiết vắc xin không tồn tại.");
+                return NotFound(new { message = "Vắc xin không tồn tại." });
             }
 
             existingDetail.ProviderName = detail.ProviderName;
@@ -193,7 +193,7 @@ namespace VaccineAPI.Controllers
             existingDetail.Status = detail.Status;
 
             await _context.SaveChangesAsync();
-            return NoContent();
+            return Ok(new { message = "Cập nhật vắc xin thành công." });
         }
 
         // DELETE: api/Vaccines/{id}/details/{detailId}
@@ -204,12 +204,34 @@ namespace VaccineAPI.Controllers
             var detail = await _context.VaccineDetails.FindAsync(detailId);
             if (detail == null || detail.VaccineId != id)
             {
-                return NotFound("Chi tiết vắc xin không tồn tại.");
+                return NotFound(new { message = "Vắc xin không tồn tại." });
             }
 
             _context.VaccineDetails.Remove(detail);
             await _context.SaveChangesAsync();
-            return Ok("Xóa chi tiết vắc xin thành công.");
+            return Ok(new { message = "Xóa vắc xin thành công." });
+        }
+
+        // PUT: api/Vaccines/search
+        [HttpGet("search")]
+        [Authorize(Roles = "ADMIN")]
+        public IActionResult SearchVaccines([FromQuery] string name)
+        {
+            if (string.IsNullOrEmpty(name))
+            {
+                return BadRequest("Tên vaccine không được để trống.");
+            }
+
+            var vaccines = _context.Vaccines
+                                .Where(u => u.Name.Contains(name))
+                                .ToList();
+
+            if (vaccines.Count == 0)
+            {
+                return NotFound("Không tìm thấy vaccine.");
+            }
+
+            return Ok(vaccines);
         }
     }
 }

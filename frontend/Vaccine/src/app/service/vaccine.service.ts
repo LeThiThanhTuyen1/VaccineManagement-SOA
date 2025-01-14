@@ -50,8 +50,10 @@ export class VaccineService {
 
   // Tìm kiếm vaccine theo tên
   searchVaccines(name: string): Observable<any> {
-    return this.http.get(`${this.API_URL}/search?name=${name}`);
+    return this.http.get(`${this.API_URL}/search?name=${name}`).pipe(catchError(this.handleError));
   }
+
+
 
   // Xử lý lỗi
   private handleError(error: any) {
