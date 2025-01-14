@@ -13,6 +13,7 @@ export class VaccineListComponent implements OnInit {
   searchTerm: string = '';
   errorMessage: string = '';
   isLoading: boolean = true;
+name: any;
   constructor(private vaccineService: VaccineService, private router: Router) {}
 
   ngOnInit(): void {
@@ -26,23 +27,23 @@ export class VaccineListComponent implements OnInit {
       this.isLoading = false;
     });
   }
-
   searchVaccines(): void {
-    if (!this.searchTerm.trim()) {
+    if (!this.name.trim()) {
       this.handleError("Vui lòng nhập tên tìm kiếm");
       return;
     }
 
     this.errorMessage = '';
-    this.vaccineService.searchVaccines(this.searchTerm).subscribe({
+    this.vaccineService.searchVaccines(this.name).subscribe({
       next: (data) => {
         this.vaccines = data;
       },
       error: () => {
-        this.handleError("Không tìm thấy vaccine tương ứng!");
+        this.handleError("Không tìm thấy tài khoản tương ứng!");
       }
     });
   }
+  
   viewDetails(id: number): void {
     this.router.navigate([`/vaccine-details/${id}`]);
   }
