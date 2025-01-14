@@ -16,10 +16,13 @@ import { AddUserComponent } from './component/admin/add-user/add-user.component'
 import { RegistrationComponent } from './component/manager/registration/registration.component';
 import { RegistrationListComponent } from './component/manager/registration-list/registration-list.component';
 import { TokenInterceptor } from './service/token-interceptor.service';
+import { VaccineListComponent } from './component/admin/vaccine-list/vaccine-list.component';
+import { VaccineDetailsComponent } from './component/admin/vaccine-details/vaccine-details.component';
+import { AddVaccineComponent } from './component/admin/add-vaccine/add-vaccine.component';
+import { EditVaccineComponent } from './component/admin/edit-vaccine/edit-vaccine.component';
 import { ManagementComponent } from './component/manager/management/management.component';
 import { AddManagementComponent } from './component/manager/add-management/add-management.component';
 import { EditManagementComponent } from './component/manager/edit-management/edit-management.component';
-
 
 
 @NgModule({
@@ -34,10 +37,14 @@ import { EditManagementComponent } from './component/manager/edit-management/edi
     AddUserComponent,
     RegistrationComponent,
     RegistrationListComponent,
+    VaccineListComponent,
+    VaccineDetailsComponent,
+    AddVaccineComponent,
+    EditVaccineComponent
     ManagementComponent,
     AddManagementComponent,
     EditManagementComponent,
-  
+
   ],
 
   imports: [

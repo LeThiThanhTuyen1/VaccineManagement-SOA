@@ -82,10 +82,30 @@ namespace VaccineAPI.Controllers
         [Authorize(Roles = "ADMIN")]
         public async Task<ActionResult<Vaccine>> PostVaccine([FromBody] Vaccine vaccine)
         {
+            if (vaccine == null)
+            {
+                return BadRequest("Dữ liệu vaccine không hợp lệ.");
+            }
+
+            if (vaccine.VaccineDetails == null || !vaccine.VaccineDetails.Any())
+            {
+                vaccine.VaccineDetails = new List<VaccineDetail>();
+            }
+
             _context.Vaccines.Add(vaccine);
+            await _context.SaveChangesAsync();
+
+            foreach (var detail in vaccine.VaccineDetails)
+            {
+                detail.VaccineId = vaccine.Id;
+                _context.VaccineDetails.Add(detail);
+            }
+
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetVaccinesWithDetails), new { id = vaccine.Id }, vaccine);
         }
+
+
 
         // PUT: api/Vaccines/{id}
         [HttpPut("{id}")]

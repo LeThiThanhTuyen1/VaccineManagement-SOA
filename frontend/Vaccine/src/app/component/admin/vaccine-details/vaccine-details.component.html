@@ -1,0 +1,28 @@
+<div *ngIf="vaccine; else errorTemplate" class="vaccine-details-container">
+    <h2 class="vaccine-title">Thông tin Vaccine: {{ vaccine.name }}</h2>
+  
+    <div class="vaccine-info">
+      <div>
+        <p><strong>Nhà sản xuất:</strong> {{ vaccine.manufacturer }}</p>
+        <p><strong>Hạn sử dụng:</strong> {{ vaccine.expirationDate }}</p>
+        <p><strong>Số lượng:</strong> {{ vaccine.quantity }}</p>
+      </div>
+      <div>
+        <p><strong>Mô tả:</strong> {{ vaccine.description }}</p>
+      </div>
+    </div>
+  
+    <h3 class="section-title">Thông tin chi tiết:</h3>
+    <div *ngFor="let detail of vaccine.details" class="detail-card">
+      <p><strong>Nhà cung cấp:</strong> {{ detail.providerName }}</p>
+      <p><strong>Giá:</strong> {{ detail.price | currency:'VND' }}</p>
+      <p><strong>Trạng thái:</strong> {{ detail.status }}</p>
+    </div>
+  </div>
+  
+  <ng-template #errorTemplate>
+    <div class="error-message">
+      <p>{{ errorMessage }}</p>
+    </div>
+  </ng-template>
+  
