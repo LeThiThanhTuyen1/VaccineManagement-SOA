@@ -42,8 +42,9 @@ export class AddVaccineComponent {
           this.resetForm(form);
         },
         error: (error) => {
+          console.error('API Error: ', error); // Log toàn bộ error để xem chi tiết
           this.errorMessage = `Lỗi: ${error.message || 'Không thể thêm vaccine.'}`;
-        }
+        }      
       });
     } else {
       this.errorMessage = 'Vui lòng điền đầy đủ thông tin vào các trường.';

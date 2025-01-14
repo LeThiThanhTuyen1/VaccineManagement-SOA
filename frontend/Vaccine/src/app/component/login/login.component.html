@@ -1,6 +1,6 @@
 <div class="login-container">
     <h2>Đăng nhập</h2>
-
+    <form (ngSubmit)="onLogin()">
       <div>
         <label for="username">Tên đăng nhập:</label>
         <input type="text" id="username" [(ngModel)]="username" name="username" required />
@@ -19,4 +19,3 @@
       <button type="submit">Đăng nhập</button>
     </form>
   </div>
-  

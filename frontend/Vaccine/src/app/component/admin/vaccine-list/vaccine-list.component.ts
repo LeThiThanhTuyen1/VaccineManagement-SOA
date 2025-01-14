@@ -55,15 +55,17 @@ export class VaccineListComponent implements OnInit {
     if (confirm('Bạn có chắc chắn muốn xóa vaccine này không?')) {
       this.vaccineService.deleteVaccine(id).subscribe({
         next: (response) => {
-          this.showSuccess(response.message || 'Xóa thành công.');
+          // Sau khi xóa thành công, lấy danh sách vaccine mới
+          this.showSuccess('Xóa thành công.');
           this.getVaccines();
         },
         error: (error) => {
-          this.handleError(error.message || 'Xóa thất bại.');
-        },
+          console.error('Lỗi khi xóa vaccine:', error); // Log chi tiết lỗi
+          this.handleError(error.error?.message || 'Xóa thất bại.');
+        }        
       });
     }
-  }
+  }  
   
   private handleError(message: string): void {
     this.errorMessage = message;

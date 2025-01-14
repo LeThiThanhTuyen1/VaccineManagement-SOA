@@ -19,26 +19,28 @@
         <input id="phoneNumber" type="tel" [(ngModel)]="editingCitizen.phoneNumber" name="phoneNumber" required />
 
         <!-- Tỉnh -->
-<select id="provinceId" [(ngModel)]="editingCitizen.provinceId" name="provinceId" (change)="onProvinceChange()" required>
-    <option *ngFor="let province of provinces" [value]="province.id">
-      {{ province.name }}
-    </option>
-  </select>
+        <label for="province">Tỉnh:</label>
+       <select id="provinceId" [(ngModel)]="editingCitizen.provinceId" name="provinceId" (change)="onProvinceChange()" required>
+          <option *ngFor="let province of provinces" [value]="province.id">
+            {{ province.name }}
+          </option>
+        </select>
   
-  <!-- Quận -->
-  <select id="districtId" [(ngModel)]="editingCitizen.districtId" name="districtId" (change)="onDistrictChange()" required>
-    <option *ngFor="let district of districts" [value]="district.id">
-      {{ district.name }}
-    </option>
-  </select>  
-  
-  <!-- Xã -->
-  <!-- Xã -->
-<select id="wardId" [(ngModel)]="editingCitizen.wardId" name="wardId" required>
-    <option *ngFor="let ward of wards" [value]="ward.id">
-      {{ ward.name }}
-    </option>
-  </select>
+      <!-- Quận -->
+      <label for="district">Huyện:</label>
+      <select id="districtId" [(ngModel)]="editingCitizen.districtId" name="districtId" (change)="onDistrictChange()" required>
+        <option *ngFor="let district of districts" [value]="district.id">
+          {{ district.name }}
+        </option>
+      </select>  
+
+      <!-- Xã -->
+      <label for="ward">Phường/xã:</label>
+      <select id="wardId" [(ngModel)]="editingCitizen.wardId" name="wardId" required>
+        <option *ngFor="let ward of wards" [value]="ward.id">
+          {{ ward.name }}
+        </option>
+      </select>
   
 
         <label for="addressDetail">Chi tiết địa chỉ:</label>
