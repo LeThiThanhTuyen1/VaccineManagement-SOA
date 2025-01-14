@@ -1,0 +1,48 @@
+<div  class="add-form">
+  <h3>Thêm Công Dân</h3>
+  <form (ngSubmit)="addNewCitizen()">
+    <label for="fullName">Họ và tên:</label>
+    <input id="fullName" [(ngModel)]="newCitizen.fullName" name="fullName" required />
+
+    <label for="dateOfBirth">Ngày sinh:</label>
+    <input id="dateOfBirth" type="date" [(ngModel)]="newCitizen.dateOfBirth" name="dateOfBirth" required />
+
+    <label for="phoneNumber">Số điện thoại:</label>
+    <input id="phoneNumber" type="tel" [(ngModel)]="newCitizen.phoneNumber" name="phoneNumber" required />
+
+    <label for="address">Địa chỉ:</label>
+    <input id="address" [(ngModel)]="newCitizen.fullAddress" name="address" required />
+    <label for="addressDetail">Chi tiết địa chỉ:</label>
+    <input id="addressDetail" [(ngModel)]="newCitizen.addressDetail" name="addressDetail" placeholder="Nhập chi tiết địa chỉ (ví dụ: số nhà, ngõ, hẻm...)" required/>
+    <label for="targetGroup">Nhóm đối tượng:</label>
+    <select id="targetGroup" [(ngModel)]="newCitizen.targetGroup" name="targetGroup" required>
+      <option *ngFor="let groupOption of targetGroups" [value]="groupOption.name">
+        {{ groupOption.displayName }}
+      </option>
+    </select>
+
+    <label for="province">Tỉnh/Thành phố:</label>
+    <select id="province" [(ngModel)]="newCitizen.provinceId" name="provinceId" (change)="onProvinceChange()" required>
+      <option *ngFor="let province of provinces" [value]="province.id">
+        {{ province.name }}
+      </option>
+    </select>
+
+    <label for="district">Huyện:</label>
+    <select id="district" [(ngModel)]="newCitizen.districtId" name="districtId" (change)="onDistrictChange()" required>
+      <option *ngFor="let district of districts" [value]="district.id">
+        {{ district.name }}
+      </option>
+    </select>
+
+    <label for="ward">Xã/Phường:</label>
+    <select id="ward" [(ngModel)]="newCitizen.wardId" name="wardId" required>
+      <option *ngFor="let ward of wards" [value]="ward.id">
+        {{ ward.name }}
+      </option>
+    </select>
+
+    <button type="submit" class="save-button">Lưu</button>
+    <button type="button" class="cancel-button" routerLink="/management">Hủy</button>
+  </form>
+</div>

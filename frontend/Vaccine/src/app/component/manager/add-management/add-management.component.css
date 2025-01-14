@@ -1,0 +1,95 @@
+.add-form {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #fefefe;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .add-form h3 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .add-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  .add-form input,
+  .add-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    box-sizing: border-box;
+  }
+  
+  .add-form input:focus,
+  .add-form select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .add-form .save-button,
+  .add-form .cancel-button {
+    width: 48%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .add-form .save-button {
+    background-color: #28a745;
+    color: white;
+    margin-right: 4%;
+  }
+  
+  .add-form .save-button:hover {
+    background-color: #218838;
+  }
+  
+  .add-form .cancel-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .add-form .cancel-button:hover {
+    background-color: #c82333;
+  }
+  
+  .add-form button[type="submit"] {
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .add-form {
+      padding: 15px;
+    }
+  
+    .add-form .save-button,
+    .add-form .cancel-button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .add-form .save-button {
+      margin-right: 0;
+    }
+  }
+  

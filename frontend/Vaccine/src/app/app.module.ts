@@ -20,6 +20,10 @@ import { VaccineListComponent } from './component/admin/vaccine-list/vaccine-lis
 import { VaccineDetailsComponent } from './component/admin/vaccine-details/vaccine-details.component';
 import { AddVaccineComponent } from './component/admin/add-vaccine/add-vaccine.component';
 import { EditVaccineComponent } from './component/admin/edit-vaccine/edit-vaccine.component';
+import { ManagementComponent } from './component/manager/management/management.component';
+import { AddManagementComponent } from './component/manager/add-management/add-management.component';
+import { EditManagementComponent } from './component/manager/edit-management/edit-management.component';
+
 
 @NgModule({
   declarations: [
@@ -37,6 +41,10 @@ import { EditVaccineComponent } from './component/admin/edit-vaccine/edit-vaccin
     VaccineDetailsComponent,
     AddVaccineComponent,
     EditVaccineComponent
+    ManagementComponent,
+    AddManagementComponent,
+    EditManagementComponent,
+
   ],
 
   imports: [
