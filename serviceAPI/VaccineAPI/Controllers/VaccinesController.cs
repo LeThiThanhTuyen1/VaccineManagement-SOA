@@ -93,19 +93,16 @@ namespace VaccineAPI.Controllers
             }
 
             _context.Vaccines.Add(vaccine);
-            await _context.SaveChangesAsync();
 
             foreach (var detail in vaccine.VaccineDetails)
             {
-                detail.VaccineId = vaccine.Id;
-                _context.VaccineDetails.Add(detail);
+                detail.VaccineId = vaccine.Id; // Đảm bảo VaccineId được gán đúng
             }
 
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync(); // Chỉ gọi SaveChangesAsync một lần
+
             return CreatedAtAction(nameof(GetVaccinesWithDetails), new { id = vaccine.Id }, vaccine);
         }
-
-
 
         // PUT: api/Vaccines/{id}
         [HttpPut("{id}")]
@@ -136,22 +133,26 @@ namespace VaccineAPI.Controllers
         // DELETE: api/Vaccines/{id}
         [HttpDelete("{id}")]
         [Authorize(Roles = "ADMIN")]
-        public async Task<IActionResult> DeleteVaccine(long id)
+        public async Task<IActionResult> DeleteVaccine(int id)
         {
-            var vaccine = await _context.Vaccines.FindAsync(id);
+            var vaccine = await _context.Vaccines
+                .Include(v => v.VaccineDetails)
+                .FirstOrDefaultAsync(v => v.Id == id);
+
             if (vaccine == null)
             {
-                return NotFound("Vắc xin không tồn tại.");
+                return NotFound("Không tìm thấy vaccine.");
             }
 
+            // Xóa các VaccineDetails liên quan trước
+            _context.VaccineDetails.RemoveRange(vaccine.VaccineDetails);
+
+            // Xóa vaccine
             _context.Vaccines.Remove(vaccine);
 
-            // Xóa các chi tiết liên quan
-            var details = _context.VaccineDetails.Where(d => d.VaccineId == id).ToList();
-            _context.VaccineDetails.RemoveRange(details);
-
             await _context.SaveChangesAsync();
-            return Ok("Xóa thành công.");
+
+            return NoContent(); // Trả về phản hồi thành công (204 No Content)
         }
 
         // POST: api/Vaccines/{id}/details

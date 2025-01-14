@@ -53,7 +53,7 @@ export class RegistrationComponent implements OnInit {
     // Fetch citizens and vaccines concurrently
     forkJoin({
       citizens: this.citizensService.getCitizens(),
-      vaccines: this.vaccineService.getVaccines(token)
+      vaccines: this.vaccineService.getVaccines()
     }).subscribe({
       next: (data) => {
         this.citizens = data.citizens;

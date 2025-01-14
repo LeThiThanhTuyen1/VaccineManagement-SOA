@@ -40,7 +40,7 @@ import { EditManagementComponent } from './component/manager/edit-management/edi
     VaccineListComponent,
     VaccineDetailsComponent,
     AddVaccineComponent,
-    EditVaccineComponent
+    EditVaccineComponent,
     ManagementComponent,
     AddManagementComponent,
     EditManagementComponent,
