@@ -93,7 +93,6 @@ export class ManagementComponent implements OnInit {
           // Xóa công dân khỏi danh sách trên giao diện
           this.citizens = this.citizens.filter(citizen => citizen.id !== citizenId);
           this.originalCitizens = this.originalCitizens.filter(citizen => citizen.id !== citizenId);
-          this.message = 'Xóa công dân thành công!';
         },
         (error) => {
           console.error('Lỗi khi xóa công dân:', error);
