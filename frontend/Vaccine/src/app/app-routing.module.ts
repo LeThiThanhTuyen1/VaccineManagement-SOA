@@ -7,7 +7,9 @@ import { AdminHomeComponent } from './component/admin/admin-home/admin-home.comp
 import { AddUserComponent } from './component/admin/add-user/add-user.component';
 import { RegistrationComponent } from './component/manager/registration/registration.component';
 import { RegistrationListComponent } from './component/manager/registration-list/registration-list.component';
-
+import { ManagementComponent } from './component/manager/management/management.component';
+import { AddManagementComponent } from './component/manager/add-management/add-management.component';
+import { EditManagementComponent } from './component/manager/edit-management/edit-management.component';
 
 
 const routes: Routes = [
@@ -18,7 +20,10 @@ const routes: Routes = [
   { path: 'add-user', component: AddUserComponent},
   { path: 'registration', component: RegistrationComponent},
   { path: 'registration-list', component: RegistrationListComponent},
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path : 'management', component :ManagementComponent },
+  { path : 'add-management' , component : AddManagementComponent},
+  { path: 'edit-management/:id', component: EditManagementComponent },
+   { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];
 
 @NgModule({
