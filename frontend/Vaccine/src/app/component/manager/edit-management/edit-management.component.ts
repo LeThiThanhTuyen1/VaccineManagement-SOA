@@ -25,7 +25,13 @@ export class EditManagementComponent implements OnInit {
     wardId: 0,
     addressDetail: '',
   };
-
+  targetGroups = [
+    { name: 'CHILD', displayName: 'CHILD' },
+    { name: 'OTHER', displayName: 'OTHER' },
+    { name : 'ELDERLY', displayName : 'ELDERLY'},
+    { name : 'PREGNANT_WOMEN' , displayName  : 'PREGNANT_WOMEN'}
+    // Add more options here as needed
+  ];
   provinces: any[] = [];
   districts: any[] = [];
   wards: any[] = [];

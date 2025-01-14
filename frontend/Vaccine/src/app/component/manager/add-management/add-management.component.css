@@ -1,38 +1,37 @@
-/* Style cho form thêm công dân */
 .add-form {
-    width: 50%;
-    margin: 30px auto; /* Tạo khoảng cách với header và footer */
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #fefefe;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
   }
   
   .add-form h3 {
     text-align: center;
-    margin-bottom: 20px;
     color: #333;
-  }
-  
-  .add-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
   }
   
   .add-form label {
-    font-weight: bold;
-    color: #555;
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 600;
+    color: #444;
   }
   
   .add-form input,
   .add-form select {
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
     width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fafafa;
     box-sizing: border-box;
   }
   
@@ -43,25 +42,22 @@
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
   }
   
-  /* Style cho hàng chứa các nút */
-  .add-form .button-row {
-    display: flex;
-    justify-content: center; /* Căn giữa các nút */
-    gap: 5px; /* Khoảng cách giữa các nút */
-    margin-top: 20px; /* Khoảng cách trên nút */
-  }
-  
-  .add-form button {
-    padding: 8px 12px; /* Kích thước nút nhỏ hơn */
-    font-size: 14px;
+  .add-form .save-button,
+  .add-form .cancel-button {
+    width: 48%;
+    padding: 12px 15px;
+    font-size: 1rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   
   .add-form .save-button {
     background-color: #28a745;
     color: white;
+    margin-right: 4%;
   }
   
   .add-form .save-button:hover {
@@ -77,10 +73,23 @@
     background-color: #c82333;
   }
   
-  /* Responsive design */
+  .add-form button[type="submit"] {
+    margin-top: 10px;
+  }
+  
   @media (max-width: 768px) {
     .add-form {
-      width: 90%;
+      padding: 15px;
+    }
+  
+    .add-form .save-button,
+    .add-form .cancel-button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .add-form .save-button {
+      margin-right: 0;
     }
   }
   
