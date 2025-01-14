@@ -1,0 +1,52 @@
+<div class="container">
+    <h2>Thêm Vaccine Mới</h2>
+    <div *ngIf="errorMessage" class="error" style="color: red;">
+        <p>{{ errorMessage }}</p>
+    </div>
+    <form (ngSubmit)="onSubmit(addVaccineForm)" #addVaccineForm="ngForm">
+        <div class="form-group">
+            <label for="name">Tên vaccine:</label>
+            <input placeholder="Nhập tên vaccine" type="text" id="name" [(ngModel)]="newVaccine.name" name="name" required />
+        </div>
+        
+        <div class="form-group">
+            <label for="manufacturer">Nhà sản xuất:</label>
+            <input placeholder="Nhập nhà sản xuất" type="text" id="manufacturer" [(ngModel)]="newVaccine.manufacturer" name="manufacturer" required />
+        </div>
+        <div class="form-group">
+            <label for="expiration_date">Hạn sử dụng:</label>
+            <input placeholder="Nhập hạn sử dụng" type="date" id="expirationDate" [(ngModel)]="newVaccine.expirationDate" name="expirationDate" required />
+        </div>
+        <div class="form-group">
+            <label for="quantity">Số lượng:</label>
+            <input placeholder="Nhập số lượng" type="number" id="quantity" [(ngModel)]="newVaccine.quantity" name="quantity" required />
+        </div>
+        <div class="form-group">
+            <label for="description">Mô tả:</label>
+            <input placeholder="Nhập mô tả" type="text" id="description" [(ngModel)]="newVaccine.description" name="description" required />
+        </div>
+        <div class="form-group">
+            <label for="providerName">Tên nhà cung cấp:</label>
+            <input placeholder="Nhập tên nhà cung cấp" type="text" id="providerName" [(ngModel)]="newVaccineDetail.providerName" name="providerName" />
+        </div>
+        
+        <div class="form-group">
+            <label for="price">Giá:</label>
+            <input placeholder="Nhập giá" type="number" id="price" [(ngModel)]="newVaccineDetail.price" name="price" />
+        </div>
+        
+        <div class="form-group">
+            <label for="status">Trạng thái:</label>
+            <select id="status" [(ngModel)]="newVaccineDetail.status" name="status" required>
+                <option value="" disabled selected>- Chọn Trạng thái -</option>
+                <option value="In Stock">Còn</option>
+                <option value="Stock">Hết hàng</option>
+            </select>        
+        </div>
+        
+
+        <div class="form-group">
+            <button type="submit" class="btn-save">Lưu</button>
+        </div>
+    </form>
+</div>
