@@ -3,19 +3,21 @@ import { UserService } from '../../../service/user.service';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
 
+interface NewUser {
+  username: string;
+  password: string;
+  role: string;
+}
+
 @Component({
   selector: 'app-add-user',
   standalone: false,
-  
   templateUrl: './add-user.component.html',
   styleUrls: ['./add-user.component.css']
 })
 export class AddUserComponent {
-  newUser: any = {};
+  newUser: NewUser = { username: '', password: '', role: '' };
   errorMessage: string | null = null;
-  username: string = '';
-  password: string = '';
-  role: string = '';
 
   constructor(private userService: UserService, private router: Router) {}
 
@@ -26,10 +28,12 @@ export class AddUserComponent {
       return;
     }
 
+    this.errorMessage = null;
+
     this.userService.register(this.newUser).subscribe({
       next: (data) => {
         alert('Tạo tài khoản thành công!');
-        addAccountForm.reset
+        addAccountForm.reset(); 
       },
       error: (err) => {
         this.errorMessage = err.error || 'Có lỗi xảy ra. Vui lòng thử lại.';

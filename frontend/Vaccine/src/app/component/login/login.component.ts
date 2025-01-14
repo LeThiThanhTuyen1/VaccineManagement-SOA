@@ -24,15 +24,13 @@ export class LoginComponent implements OnInit {
         // Lưu token vào localStorage
         this.authService.saveToken(response.token);
         this.authService.saveRole(response.role);
+        
         if(this.authService.getRole() == 'ADMIN') {
           this.router.navigate(['/home-admin']);
         }
         else {
           this.router.navigate(['/home-manager']);
         }
-
-        // Chuyển hướng đến trang chủ hoặc trang bạn muốn
-        // this.errorMessage = 'Đăng nhập thành công.';
       },
       (error) => {
         this.errorMessage = 'Đăng nhập thất bại. Kiểm tra lại thông tin đăng nhập.';

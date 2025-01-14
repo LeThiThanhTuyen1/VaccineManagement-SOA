@@ -6,15 +6,36 @@
     align-items: center;
   }
 
-  .btn.btn-primary {
+  .btn-primary {
     background-color: #28a745;
     color: white;
-    padding: 10px 20px;
+}
+.btn {
+    padding: 7px 20px;
     border-radius: 5px;
     text-decoration: none;
 }
 
-.btn.btn-primary:hover {
+.btn-success {
+  background-color: #eaea09;  
+  color: #333;
+}
+
+.btn-danger {
+  background-color: #ea3a09;  
+  color: rgb(251, 251, 251);
+  margin-left: 10px;
+}
+
+.btn-success:hover {
+  background-color: #f8f363; 
+}
+
+.btn-danger:hover {
+  background-color: #dd380a; 
+}
+
+.btn-primary:hover {
     background-color: #218838;
 }
 

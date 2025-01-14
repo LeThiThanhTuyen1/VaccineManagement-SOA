@@ -189,58 +189,89 @@ namespace VaccinationAPI.Controllers
             return Ok(results);
         }
 
-        // POST: api/registrations/create-schedule
-        //[HttpPost("create-schedule")]
-        //public async Task<IActionResult> CreateVaccinationSchedule([FromBody] VaccinationScheduleDTO scheduleDto)
-        //{
-        //    if (!ModelState.IsValid)
-        //        return BadRequest(ModelState);
+        // POST: api/registrations/{id}/complete
+        [HttpPost("{id}/complete")]
+        public async Task<IActionResult> CompleteVaccination(long id)
+        {
+            var token = Request.Headers["Authorization"].ToString()?.Replace("Bearer ", "");
+            if (string.IsNullOrEmpty(token))
+                return Unauthorized("Không có token xác thực.");
 
-        //    // Lấy thông tin đăng ký
-        //    var registration = await _context.Registrations.FirstOrDefaultAsync(r => r.Id == scheduleDto.RegistrationId);
-        //    if (registration == null)
-        //        return NotFound("Đăng ký không tồn tại.");
+            var registration = await _context.Registrations.FirstOrDefaultAsync(r => r.Id == id);
+            if (registration == null)
+                return NotFound("Không tìm thấy đăng ký.");
 
-        //    if (registration.Status != "Pending")
-        //        return BadRequest("Đăng ký không hợp lệ để tạo lịch tiêm.");
+            if (registration.Status != "PENDING")
+                return BadRequest("Chỉ có thể hoàn thành lịch đăng ký khi trạng thái là PENDING.");
 
-        //    // Lấy thông tin công dân và vaccine
-        //    var vaccine = await _context.Vaccines.FirstOrDefaultAsync(v => v.Id == registration.VaccineId);
-        //    if (vaccine == null || vaccine.Quantity <= 0)
-        //        return BadRequest("Vaccine không đủ số lượng.");
+            // Kiểm tra công dân và vaccine trước khi thêm vào lịch sử tiêm chủng
+            var citizen = await FetchFromApiAsync<CitizenDTO>("CitizenAPI", $"/api/Citizens/{registration.CitizenId}", token);
+            if (citizen == null)
+                return BadRequest("Công dân không tồn tại.");
 
-        //    // Kiểm tra lịch tiêm có trùng lặp không
-        //    var existingHistory = await _context.VaccinationHistories
-        //        .FirstOrDefaultAsync(h => h.CitizenId == registration.CitizenId && h.VaccineId == registration.VaccineId);
+            var vaccine = await FetchFromApiAsync<VaccineDTO>("VaccineAPI", $"/api/Vaccines/{registration.VaccineId}", token);
+            if (vaccine == null)
+                return BadRequest("Vaccine không tồn tại.");
 
-        //    if (existingHistory != null)
-        //        return BadRequest("Công dân đã được tiêm vaccine này.");
+            // Thêm vào bảng lịch sử tiêm chủng
+            var vaccinationHistory = new VaccinationHistory
+            {
+                CitizenId = registration.CitizenId,
+                VaccineId = registration.VaccineId,
+                VaccinationDate = DateTime.Now,
+                Status = "COMPLETED"
+            };
 
-        //    // Thêm lịch sử tiêm vào bảng VaccinationHistory
-        //    var vaccinationHistory = new VaccinationHistory
-        //    {
-        //        CitizenId = registration.CitizenId,
-        //        VaccineId = registration.VaccineId,
-        //        VaccinationDate = scheduleDto.VaccinationDate,
-        //        Status = "Scheduled" // Trạng thái lịch tiêm
-        //    };
+            _context.VaccinationHistories.Add(vaccinationHistory);
 
-        //    _context.VaccinationHistories.Add(vaccinationHistory);
+            // Cập nhật trạng thái của đăng ký
+            registration.Status = "COMPLETED";
+            await _context.SaveChangesAsync();
 
-        //    // Cập nhật trạng thái đăng ký
-        //    registration.Status = "Scheduled";
+            return Ok(new { message = "Hoàn thành lịch đăng ký tiêm chủng." });
+        }
 
-        //    // Giảm số lượng vaccine
-        //    vaccine.Quantity -= 1;
+        // POST: api/registrations/{id}/cancel
+        [HttpPost("{id}/cancel")]
+        public async Task<IActionResult> CancelVaccination(long id)
+        {
+            var token = Request.Headers["Authorization"].ToString()?.Replace("Bearer ", "");
+            if (string.IsNullOrEmpty(token))
+                return Unauthorized("Không có token xác thực.");
 
-        //    // Lưu thay đổi vào cơ sở dữ liệu
-        //    await _context.SaveChangesAsync();
+            var registration = await _context.Registrations.FirstOrDefaultAsync(r => r.Id == id);
+            if (registration == null)
+                return NotFound("Không tìm thấy đăng ký.");
 
-        //    return Ok(new
-        //    {
-        //        Message = "Lịch tiêm đã được tạo thành công.",
-        //        VaccinationHistory = vaccinationHistory
-        //    });
-        //}
+            if (registration.Status != "PENDING")
+                return BadRequest("Chỉ có thể hủy lịch đăng ký khi trạng thái là PENDING.");
+
+            // Kiểm tra công dân và vaccine trước khi thêm vào lịch sử tiêm chủng
+            var citizen = await FetchFromApiAsync<CitizenDTO>("CitizenAPI", $"/api/Citizens/{registration.CitizenId}", token);
+            if (citizen == null)
+                return BadRequest("Công dân không tồn tại.");
+
+            var vaccine = await FetchFromApiAsync<VaccineDTO>("VaccineAPI", $"/api/Vaccines/{registration.VaccineId}", token);
+            if (vaccine == null)
+                return BadRequest("Vaccine không tồn tại.");
+
+            // Thêm vào bảng lịch sử tiêm chủng với trạng thái "MISSED"
+            var vaccinationHistory = new VaccinationHistory
+            {
+                CitizenId = registration.CitizenId,
+                VaccineId = registration.VaccineId,
+                VaccinationDate = DateTime.Now,
+                Status = "MISSED"
+            };
+
+            _context.VaccinationHistories.Add(vaccinationHistory);
+
+            // Cập nhật trạng thái của đăng ký
+            registration.Status = "CANCELLED";
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Đã hủy lịch đăng ký tiêm chủng." });
+        }
+
     }
 }
