@@ -68,7 +68,7 @@ public class UsersController : ControllerBase
             new Claim(ClaimTypes.Name, dbUser.Id.ToString()),
             new Claim(ClaimTypes.Role, dbUser.Role)
         }),
-            Expires = DateTime.UtcNow.AddHours(1),
+            Expires = DateTime.UtcNow.AddHours(24),
             SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),
             Issuer = "https://localhost:5100",
             Audience = "vaccineapi"

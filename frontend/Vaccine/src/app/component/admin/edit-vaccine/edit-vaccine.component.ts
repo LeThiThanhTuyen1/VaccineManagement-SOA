@@ -59,7 +59,8 @@ export class EditVaccineComponent implements OnInit {
       },
     });
   }
+
   cancelEdit() {
-    this.router.navigate(['/vaccines']); // Điều hướng về trang danh sách
+    this.router.navigate(['/vaccine-list']); // Điều hướng về trang danh sách
   }
 }

@@ -70,12 +70,7 @@ export class EditManagementComponent implements OnInit {
           // Gán thông tin của công dân cho đối tượng editingCitizen
           this.editingCitizen = { ...citizen }; 
           this.editingCitizen.dateOfBirth = this.formatDate(this.editingCitizen.dateOfBirth);
-          
-          // Đảm bảo có wardId, provinceId, và districtId chính xác
-          console.log('Citizen Province ID:', this.editingCitizen.provinceId);
-          console.log('Citizen District ID:', this.editingCitizen.districtId);
-          console.log('Citizen Ward ID:', this.editingCitizen.wardId);
-  
+        
           // Tải các quận/huyện theo tỉnh của công dân
           this.onProvinceChange();
         }
@@ -129,11 +124,6 @@ formatDate(date: string): string {
     }
   }
   
-trackByWardId(index: number, ward: any): number {
-  return ward.id; // Return the ward ID as the unique identifier
-}
-
-
   // Update citizen information
   updateCitizen(): void {
     // Ensure the model contains the updated data

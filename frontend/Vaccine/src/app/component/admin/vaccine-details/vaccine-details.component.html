@@ -19,7 +19,9 @@
       <p><strong>Trạng thái:</strong> {{ detail.status }}</p>
     </div>
   </div>
-  
+  <button type="button" (click)="cancelDetail()" class="btn btn-secondary">
+    Hủy
+  </button>
   <ng-template #errorTemplate>
     <div class="error-message">
       <p>{{ errorMessage }}</p>

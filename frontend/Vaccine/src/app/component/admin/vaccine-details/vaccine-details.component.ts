@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { VaccineService } from '../../../service/vaccine.service';
 import { Vaccine } from '../../../model/vaccine';
 
@@ -15,7 +15,8 @@ export class VaccineDetailsComponent implements OnInit {
 
   constructor(
     private vaccineService: VaccineService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -36,5 +37,9 @@ export class VaccineDetailsComponent implements OnInit {
         this.errorMessage = `Lỗi: ${error.message || 'Không thể lấy chi tiết vaccine.'}`;
       }
     });
+  }
+
+  cancelDetail() {
+    this.router.navigate(['/vaccine-list']); // Điều hướng về trang danh sách
   }
 }

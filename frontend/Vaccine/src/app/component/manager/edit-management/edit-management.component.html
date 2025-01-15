@@ -1,52 +1,54 @@
 <div class="edit-form">
-    <h3>Chỉnh sửa Công Dân</h3>
-    <form (ngSubmit)="updateCitizen()">
-        <label for="fullName">Họ và tên:</label>
-        <input id="fullName" [(ngModel)]="editingCitizen.fullName" name="fullName" required />
+  <h3>Chỉnh sửa Công Dân</h3>
+  <form (ngSubmit)="updateCitizen()">
+    <label for="fullName">Họ và tên:</label>
+    <input id="fullName" [(ngModel)]="editingCitizen.fullName" name="fullName" required />
 
-        <!-- Date of Birth Input -->
-        <div>
-            <label for="dateOfBirth">Ngày sinh</label>
-            <input 
-              type="date" 
-              id="dateOfBirth" 
-              [(ngModel)]="editingCitizen.dateOfBirth" 
-              name="dateOfBirth" 
-              required />
-        </div>
+    <!-- Date of Birth Input -->
+    <div>
+      <label for="dateOfBirth">Ngày sinh</label>
+      <input type="date" id="dateOfBirth" [(ngModel)]="editingCitizen.dateOfBirth" name="dateOfBirth" required />
+    </div>
 
-        <label for="phoneNumber">Số điện thoại:</label>
-        <input id="phoneNumber" type="tel" [(ngModel)]="editingCitizen.phoneNumber" name="phoneNumber" required />
+    <label for="phoneNumber">Số điện thoại:</label>
+    <input id="phoneNumber" type="tel" [(ngModel)]="editingCitizen.phoneNumber" name="phoneNumber" required />
 
-        <!-- Tỉnh -->
-        <label for="province">Tỉnh:</label>
-       <select id="provinceId" [(ngModel)]="editingCitizen.provinceId" name="provinceId" (change)="onProvinceChange()" required>
-          <option *ngFor="let province of provinces" [value]="province.id">
-            {{ province.name }}
-          </option>
-        </select>
-  
-      <!-- Quận -->
-      <label for="district">Huyện:</label>
-      <select id="districtId" [(ngModel)]="editingCitizen.districtId" name="districtId" (change)="onDistrictChange()" required>
-        <option *ngFor="let district of districts" [value]="district.id">
-          {{ district.name }}
-        </option>
-      </select>  
+    <!-- Tỉnh -->
+    <label for="province">Tỉnh:</label>
+    <select id="provinceId" [(ngModel)]="editingCitizen.provinceId" name="provinceId" (change)="onProvinceChange()" required>
+      <option *ngFor="let province of provinces" [value]="province.id">
+        {{ province.name }}
+      </option>
+    </select>
 
-      <!-- Xã -->
-      <label for="ward">Phường/xã:</label>
-      <select id="wardId" [(ngModel)]="editingCitizen.wardId" name="wardId" required>
-        <option *ngFor="let ward of wards" [value]="ward.id">
-          {{ ward.name }}
-        </option>
-      </select>
-  
+    <!-- Quận -->
+    <label for="district">Huyện:</label>
+    <select id="districtId" [(ngModel)]="editingCitizen.districtId" name="districtId" (change)="onDistrictChange()" required>
+      <option *ngFor="let district of districts" [value]="district.id">
+        {{ district.name }}
+      </option>
+    </select>
 
-        <label for="addressDetail">Chi tiết địa chỉ:</label>
-        <input id="addressDetail" [(ngModel)]="editingCitizen.addressDetail" name="addressDetail" placeholder="Nhập chi tiết địa chỉ" required />
+    <!-- Xã -->
+    <label for="ward">Phường/xã:</label>
+    <select id="wardId" [(ngModel)]="editingCitizen.wardId" name="wardId" required>
+      <option *ngFor="let ward of wards" [value]="ward.id">
+        {{ ward.name }}
+      </option>
+    </select>
 
-        <button type="submit" class="save-button">Lưu</button>
-        <button type="button" routerLink="/management" class="cancel-button">Hủy</button>
-    </form>
+    <!-- Target Group -->
+    <label for="targetGroup">Nhóm đối tượng:</label>
+    <select id="targetGroup" [(ngModel)]="editingCitizen.targetGroup" name="targetGroup" required>
+      <option *ngFor="let group of targetGroups" [value]="group.name">
+        {{ group.displayName }}
+      </option>
+    </select>
+
+    <label for="addressDetail">Chi tiết địa chỉ:</label>
+    <input id="addressDetail" [(ngModel)]="editingCitizen.addressDetail" name="addressDetail" placeholder="Nhập chi tiết địa chỉ" required />
+
+    <button type="submit" class="save-button">Lưu</button>
+    <button type="button" routerLink="/management" class="cancel-button">Hủy</button>
+  </form>
 </div>
