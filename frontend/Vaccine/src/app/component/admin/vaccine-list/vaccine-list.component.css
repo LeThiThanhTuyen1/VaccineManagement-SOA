@@ -17,6 +17,10 @@ h2 {
     text-decoration: none;
 }
 
+.btn {
+    margin-left: 10px;
+}
+
 .alert {
     color: #fb2b06;
     padding-top: 20px;
@@ -33,7 +37,7 @@ input[type="text"] {
     
     padding: 8px;
     font-size: 15px;
-    width: 400px;
+    width: 800px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }

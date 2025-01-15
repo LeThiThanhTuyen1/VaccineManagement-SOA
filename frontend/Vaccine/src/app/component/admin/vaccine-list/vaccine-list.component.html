@@ -4,14 +4,12 @@
   </div>
   
     <div  *ngIf="!isLoading" class="container">  
-      <form (submit)="searchVaccines()">
-          <input type="text" [(ngModel)]="name" name="name" placeholder="Nhập tên vaccine để tìm kiếm..." />
-          <button type="submit">Tìm kiếm</button>
-      </form>      
-      
       <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
       <h2>Danh Sách Vaccine</h2>
-      
+      <form (submit)="searchVaccines()">
+        <input type="text" [(ngModel)]="name" name="name" placeholder="Nhập tên vaccine để tìm kiếm..." />
+        <button type="submit">Tìm kiếm</button>
+    </form> 
       <table>
         <thead>
           <tr>

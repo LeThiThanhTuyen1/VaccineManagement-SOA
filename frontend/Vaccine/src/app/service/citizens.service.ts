@@ -25,9 +25,11 @@ export class CitizensService {
   addCitizen(citizen: Citizen): Observable<Citizen> {
     return this.http.post<Citizen>(this.apiUrl, citizen);
   }
+
   deleteCitizen(citizenId: number) {
     return this.http.delete(`${this.apiUrl}/${citizenId}`);
   }
+  
   // Update an existing citizen
   updateCitizen(id: number, citizen: Citizen): Observable<void> {
     return this.http.put<void>(`${this.apiUrl}/${id}`, citizen);

@@ -14,6 +14,7 @@ import { EditVaccineComponent } from './component/admin/edit-vaccine/edit-vaccin
 import { ManagementComponent } from './component/manager/management/management.component';
 import { AddManagementComponent } from './component/manager/add-management/add-management.component';
 import { EditManagementComponent } from './component/manager/edit-management/edit-management.component';
+import { VaccinationHistoryComponent } from './component/manager/vaccination-history/vaccination-history.component';
 
 
 const routes: Routes = [
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path : 'management', component :ManagementComponent },
   { path : 'add-management' , component : AddManagementComponent},
+  { path: 'vaccination-history', component: VaccinationHistoryComponent},
   { path: 'edit-management/:id', component: EditManagementComponent },
    { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];

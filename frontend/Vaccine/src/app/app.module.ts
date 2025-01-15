@@ -23,6 +23,7 @@ import { EditVaccineComponent } from './component/admin/edit-vaccine/edit-vaccin
 import { ManagementComponent } from './component/manager/management/management.component';
 import { AddManagementComponent } from './component/manager/add-management/add-management.component';
 import { EditManagementComponent } from './component/manager/edit-management/edit-management.component';
+import { VaccinationHistoryComponent } from './component/manager/vaccination-history/vaccination-history.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { EditManagementComponent } from './component/manager/edit-management/edi
     ManagementComponent,
     AddManagementComponent,
     EditManagementComponent,
+    VaccinationHistoryComponent,
 
   ],
 

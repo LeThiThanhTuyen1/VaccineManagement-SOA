@@ -80,6 +80,7 @@ export class AddManagementComponent implements OnInit {
   addNewCitizen(): void {
     this.citizensService.addCitizen(this.newCitizen).subscribe((response) => {
       console.log('New Citizen Added:', response);
+      alert('Thêm thông tin công dân thành công');
       this.resetForm();
     }, error => {
       console.error('Error adding citizen:', error);

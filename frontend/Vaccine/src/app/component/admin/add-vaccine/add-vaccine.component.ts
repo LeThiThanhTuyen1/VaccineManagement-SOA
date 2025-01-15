@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { VaccineService } from '../../../service/vaccine.service';
 import { VaccineDetail } from '../../../model/vaccine-detail';
 import { Vaccine } from '../../../model/vaccine';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-vaccine',
@@ -27,7 +28,7 @@ export class AddVaccineComponent {
 
   errorMessage: string = ''; // Để hiển thị lỗi
 
-  constructor(private vaccineService: VaccineService) {}
+  constructor(private vaccineService: VaccineService, private router: Router) {}
 
   // Xử lý khi nhấn nút lưu
   onSubmit(form: any): void {
@@ -73,5 +74,9 @@ export class AddVaccineComponent {
     // Reset error message and form
     this.errorMessage = '';
     form.resetForm();
+  }
+
+  cancelAdd() {
+    this.router.navigate(['/vaccine-list']); // Điều hướng về trang danh sách
   }
 }
